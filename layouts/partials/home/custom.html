@@ -3,18 +3,20 @@
     h-full
   {{ end }} flex flex-col items-center justify-center text-center"
 >
-<span id="news-box" class="flex flex-row">
+<span id="news-box" class="flex flex-row mb-3">
+  <!-- <span class="rounded-md border-2 border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 ltr:ml-1 rtl:mr-1 dark:border-primary-600 dark:text-primary-400" > -->
   <span
-    class="rounded-md border-2 border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 ltr:ml-1 rtl:mr-1 dark:border-primary-600 dark:text-primary-400"
+    class="border-2 rounded-lg border-solid hover:border-primary-400 hover:cursor-pointer px-2 py-[2px] text-sm font-normal antialised text-primary-700 ltr:ml-1 rtl:mr-1 dark:border-primary-700 dark:hover:!border-primary-600 dark:text-primary-400"
   >
-  {{ partial "icon.html" "circle-info" }}  {{ .Params.news }}
+  {{ partial "icon.html" "triangle-exclamation" }} {{ .Params.news }}
+  <!-- {{ partial "icon.html" "circle-info" }} -->
   </span>
 <!-- </span> -->
 <!-- <span id="courses-box" class="flex"> -->
   <span
-    class="rounded-md border-2 border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 ltr:ml-1 rtl:mr-1 dark:border-primary-600 dark:text-primary-400"
+    class="border-2 rounded-lg border-solid hover:border-primary-400 hover:cursor-pointer  px-2 py-[2px] text-sm font-normal antialised text-primary-700 ltr:ml-1 rtl:mr-1 dark:border-primary-700 dark:hover:!border-primary-600 dark:text-primary-400"
   >
-  {{ partial "icon.html" "circle-info" }}  {{ .Params.courses }}
+  {{ partial "icon.html" "triangle-exclamation" }}  {{ .Params.courses }}
   </span>
 </span>
 

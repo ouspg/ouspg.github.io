@@ -11,11 +11,11 @@ description = "The purpose of the Oulu University Secure Programming Group (OUSP
 # copyright = "Copy, _right?_ :thinking_face:"
 copyright = "Copyright © 2023, Oulu University Secure Programming Group"
 
-dateFormat = "2 January 2006"
+dateFormat = ":date_full"
 
 [author]
   name = "Oulu University Secure Programming Group"
-  mage = "ouspglogo4.png"
+  image = "images/ouspglogo4.png"
   # headline = "I'm only human"
   # bio = "The purpose of the Oulu University Secure Programming Group (OUSPG) is to study, evaluate and develop methods of implementing and testing application and system software in order to prevent, discover and eliminate implementation level security vulnerabilities in a pro-active fashion. Our focus is on implementation level security issues and software security testing."
   # links = [

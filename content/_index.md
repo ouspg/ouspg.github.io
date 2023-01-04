@@ -48,4 +48,6 @@ See also: OUSPG tools available on our Github page.
 More information
 {{< /button >}}
 
-## Contact
+## Contact information
+
+Please, send a email to ouspg (at) ouspg.org
