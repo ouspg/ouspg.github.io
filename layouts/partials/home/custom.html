@@ -3,6 +3,21 @@
     h-full
   {{ end }} flex flex-col items-center justify-center text-center"
 >
+<span id="news-box" class="flex flex-row">
+  <span
+    class="rounded-md border-2 border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 ltr:ml-1 rtl:mr-1 dark:border-primary-600 dark:text-primary-400"
+  >
+  {{ partial "icon.html" "circle-info" }}  {{ .Params.news }}
+  </span>
+<!-- </span> -->
+<!-- <span id="courses-box" class="flex"> -->
+  <span
+    class="rounded-md border-2 border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 ltr:ml-1 rtl:mr-1 dark:border-primary-600 dark:text-primary-400"
+  >
+  {{ partial "icon.html" "circle-info" }}  {{ .Params.courses }}
+  </span>
+</span>
+
   <header class="flex flex-col items-center mb-3">
     <!-- {{ with .Site.Author.image }}
       {{ $authorImage := resources.Get . }}

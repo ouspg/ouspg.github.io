@@ -1,12 +1,25 @@
 * {
     font-family: Open Sans;
   }
+#news-box {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+#courses-box {
+    margin-bottom: 3rem;
+}
+
+#news-box span, #courses-box span {
+ font-size: medium;
+ padding: 3px 3px 3px 3px;
+}
 
 #main-content article {
     text-align: left;
 }
 #main-content article header {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 /* #main-content {

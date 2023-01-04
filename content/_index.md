@@ -1,8 +1,17 @@
 ---
 author: Oulu University Secure Programing Group
 title: Oulu University Secure Programming Group
+
+news: "We are hiring!"
+courses: "Check our ongoing courses!"
 date: 2023-01-04
 ---
+<!-- {{< badge >}}
+{{< icon "circle-info" >}} Ongoing courses: Cryptographic systems and their weaknesses and Introduction to Cyber Security Testing
+{{< /badge >}} -->
+<!-- {{< alert "circle-info" >}}
+Ongoing courses: Cryptographic systems and their weaknesses and Introduction to Cyber Security Testing
+{{< /alert >}} -->
 
 <!-- {{< figure
     src="abstract.jpg"
@@ -21,7 +30,7 @@ OUSPG is active as an academic research group in the University of Oulu since su
 Results and Publications
 {{< /button >}}
 
-## Teaching
+## Teaching activities
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a orci sagittis, elementum lorem vel, tincidunt magna. Suspendisse vestibulum, ipsum a hendrerit pulvinar, sem nibh condimentum eros, in congue enim eros vitae ligula. Maecenas sit amet bibendum urna. Pellentesque sit amet lobortis nunc. Nunc vehicula turpis sed varius suscipit. Nullam eget lacus vitae augue maximus vestibulum. Mauris rutrum tempor velit feugiat convallis. Etiam pretium vel nunc eu tincidunt. In hac habitasse platea dictumst. 
 
