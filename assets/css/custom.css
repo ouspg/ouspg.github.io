@@ -1,0 +1,14 @@
+* {
+    font-family: Open Sans;
+  }
+
+#main-content article {
+    text-align: left;
+}
+#main-content article header {
+    padding-bottom: 3rem;
+}
+
+/* #main-content {
+    max-width: 70%;
+} */
