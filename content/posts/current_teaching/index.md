@@ -1,11 +1,10 @@
 
 ---
 author: Oulu University Secure Programing Group
-title: First period teaching in 2023
+title: Teaching in first period of 2023
 showReadingTime: false
 date: 2023-01-04
 ---
-
 We are currently running three different courses.
 
   * Introduction to Cyber Security Testing 01.01.2023 - 13.03.2023

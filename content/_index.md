@@ -1,6 +1,6 @@
 ---
 author: Oulu University Secure Programing Group
-title: Oulu University Secure Programming Group
+title: "Oulu University Secure Programming Group"
 
 news: "We are hiring!"
 courses: "Check our ongoing courses!"
@@ -30,6 +30,8 @@ OUSPG is active as an academic research group in the University of Oulu since su
 Results and Publications
 {{< /button >}}
 
+---
+
 ## Teaching activities
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a orci sagittis, elementum lorem vel, tincidunt magna. Suspendisse vestibulum, ipsum a hendrerit pulvinar, sem nibh condimentum eros, in congue enim eros vitae ligula. Maecenas sit amet bibendum urna. Pellentesque sit amet lobortis nunc. Nunc vehicula turpis sed varius suscipit. Nullam eget lacus vitae augue maximus vestibulum. Mauris rutrum tempor velit feugiat convallis. Etiam pretium vel nunc eu tincidunt. In hac habitasse platea dictumst. 
@@ -48,6 +50,8 @@ See also: OUSPG tools available on our Github page.
 More information
 {{< /button >}}
 
+---
+
 ## Contact information
 
-Please, send a email to ouspg (at) ouspg.org
+Please, send an email to ouspg (at) ouspg.org
