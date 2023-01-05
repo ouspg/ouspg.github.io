@@ -13,6 +13,8 @@ copyright = "Copyright © 2023, Oulu University Secure Programming Group"
 
 dateFormat = ":date_full"
 
+notification1 = { enabled = true, info_full = "We are hiring. Come to Pestipäivät in 19.1.2023", info_short = "We are hiring!", url = "https://google.com" }
+
 [author]
   name = "Oulu University Secure Programming Group"
   image = "images/ouspglogo4.png"
