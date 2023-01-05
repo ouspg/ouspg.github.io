@@ -1,9 +1,10 @@
-
 ---
 author: Oulu University Secure Programing Group
 title: Teaching in first period of 2023
 showReadingTime: false
 date: 2023-01-04
+summary: New year and new courses have started.
+showSummary: true
 ---
 We are currently running three different courses.
 

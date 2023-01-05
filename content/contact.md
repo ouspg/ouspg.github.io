@@ -4,12 +4,12 @@ title: "Call to Action"
 # menu: "main"
 date: 2023-01-04
 lastmod: 2023-01-05
-showDateUpdated: true
+showDateUpdated: false
 showDate: false
 showAuthor: false
 showEdit: false
 showPagination: false
-showTableOfContents: true
+showTableOfContents: false
 showReadingTime: false
 showHeadingAnchors: false
 ---
