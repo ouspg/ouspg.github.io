@@ -21,9 +21,14 @@
   weight = 20
 
 [[main]]
+  name = "News"
+  pageRef = "posts"
+  weight = 30
+
+[[main]]
   name = "About"
   pageRef = "about"
-  weight = 30
+  weight = 40
 
 
 # -- Footer Menu --
