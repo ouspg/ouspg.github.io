@@ -18,4 +18,4 @@ showHeadingAnchors: false
 
 ## Call to Action
 
-### **Please, send an email to ouspg (at) ouspg.org**
+### **Please, send an email to ouspg@ouspg.org**
