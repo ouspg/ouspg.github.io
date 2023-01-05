@@ -16,8 +16,8 @@
   weight = 10
 
 [[main]]
-  name = "Teaching"
-  pageRef = "teaching"
+  name = "Learning"
+  pageRef = "learning"
   weight = 20
 
 [[main]]
@@ -26,8 +26,8 @@
   weight = 30
 
 [[main]]
-  name = "About"
-  pageRef = "about"
+  name = "Contact"
+  url = "/#call-to-action"
   weight = 40
 
 

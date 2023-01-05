@@ -1,7 +1,6 @@
 ---
 author: Oulu University Secure Programing Group
 title: "Research"
-menu: "main"
 date: 2023-01-04
 lastmod: 2023-01-05
 showDateUpdated: true

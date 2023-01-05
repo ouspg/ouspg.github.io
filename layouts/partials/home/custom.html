@@ -44,6 +44,9 @@
     </div>
   </header>
   <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
+
+      {{ partial "contact.html" . }}
+
 </article>
 <section>
   {{ partial "recent-articles.html" . }}

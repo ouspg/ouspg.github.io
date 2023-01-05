@@ -49,12 +49,3 @@ See also: OUSPG tools available on our Github page.
 {{< button href="#button" target="_self" >}}
 More information
 {{< /button >}}
-
----
-
-## Contact information
-
-Please, send an email to ouspg (at) ouspg.org
-
-
----
