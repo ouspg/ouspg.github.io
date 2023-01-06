@@ -19,8 +19,8 @@ enableCodeCopy = true
 
 [header]
   layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
-  logo = "images/cropped_logo.png"
-  # logo = "/images/backup_ouspg_dagger.svg"
+  # logo = "images/cropped_logo.png"
+  logo = "/images/ouspg_logo_painted.svg"
   showTitle = true
 
 [footer]
