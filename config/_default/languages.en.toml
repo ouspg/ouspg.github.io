@@ -6,18 +6,18 @@ weight = 1
 rtl = false
 
 title = "OUSPG"
-# header.logo = "ouspglogo4.png"
 description = "The purpose of the Oulu University Secure Programming Group (OUSPG) is to study, evaluate and develop methods of implementing and testing application and system software in order to prevent, discover and eliminate implementation level security vulnerabilities in a pro-active fashion. Our focus is on implementation level security issues and software security testing."
 # copyright = "Copy, _right?_ :thinking_face:"
 copyright = "Copyright © 2023, Oulu University Secure Programming Group"
 
 dateFormat = ":date_full"
 
-notification1 = { enabled = true, info_full = "We are hiring. Come to Pesti Careed Day in 19.1.2023!", info_short = "We are hiring!", url = "https://pestipaivat.fi/en/" }
+notification1 = { enabled = true, info_full = "We are hiring. Come to Pesti Career Day in 19.1.2023!", info_short = "We are hiring!", url = "https://pestipaivat.fi/en/" }
 
 [author]
   name = "Oulu University Secure Programming Group"
-  image = "images/ouspglogo4.png"
+  image = "images/cropped_logo.png"
+  # image = "/images/backup_ouspg_dagger.svg"
   # headline = "I'm only human"
   bio = "OUSPG is active as an academic research group in the University of Oulu since summer 1996."
   links = [
