@@ -20,7 +20,7 @@ enableCodeCopy = true
 [header]
   layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
   # logo = "images/cropped_logo.png"
-  logo = "/images/ouspg_logo_painted.svg"
+  logo = "/images/draw/multicolour_base_min1.svg"
   showTitle = true
 
 [footer]
