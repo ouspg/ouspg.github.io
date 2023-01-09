@@ -11,3 +11,4 @@ We are currently running three different courses.
   * [Introduction to Cyber Security Testing 01.01.2023 - 13.03.2023](https://opas.peppi.oulu.fi/en/course/IC00AI82/32356?period=2022-2023)
   * [Cryptographic systems and their weaknesses 01.01.2023 - 12.03.2023](https://opas.peppi.oulu.fi/en/course/521254S/16803?period=2022-2023)
   * [Embedded Software Project 01.01.2023 - 07.05.2023](https://opas.peppi.oulu.fi/en/course/521275A/2573?period=2022-2023)
+  * [Software Engineering 01.01.2023 - 12.03.2023](https://opas.peppi.oulu.fi/en/course/521457A/730?period=2022-2023)
