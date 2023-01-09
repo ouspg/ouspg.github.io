@@ -14,8 +14,10 @@ showReadingTime: false
 showHeadingAnchors: false
 ---
 
-## {{< icon "lightbulb" >}}
+<!-- ## {{< icon "lightbulb" >}} -->
 
 ## Call to Action
 
-### **Please, send an email to ouspg@ouspg.org**
+For collaboration inquiries, learning and working possibilities, and any other questions, please
+
+### **Send an email to ouspg@ouspg.org**

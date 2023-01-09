@@ -18,19 +18,6 @@
   </span>
 </span>  -->
   <header class="flex flex-col items-center mb-3">
-    <!-- {{ with .Site.Author.image }}
-      {{ $authorImage := resources.Get . }}
-      {{ if $authorImage }}
-        {{ $authorImage := $authorImage.Fill "288x288" }}
-        <img
-          class="mb-2 rounded-full h-36 w-36"
-          width="144"
-          height="144"
-          alt="{{ $.Site.Author.name | default "Author" }}"
-          src="{{ $authorImage.RelPermalink }}"
-        />
-      {{ end }}
-    {{ end }} -->
     <h1 class="text-4xl font-extrabold">
       {{ .Site.Author.name | default .Site.Title }}
     </h1>

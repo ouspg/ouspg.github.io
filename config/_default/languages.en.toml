@@ -16,8 +16,7 @@ notification1 = { enabled = true, info_full = "We are hiring. Come to Pesti Care
 
 [author]
   name = "Oulu University Secure Programming Group"
-  image = "images/cropped_logo.png"
-  # image = "/images/backup_ouspg_dagger.svg"
+  image = "images/ouspglogo4.png"
   # headline = "I'm only human"
   bio = "OUSPG is active as an academic research group in the University of Oulu since summer 1996."
   links = [
