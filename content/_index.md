@@ -32,20 +32,8 @@ Results and Publications
 
 ---
 
-## Teaching activities
+## Work In Progress
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a orci sagittis, elementum lorem vel, tincidunt magna. Suspendisse vestibulum, ipsum a hendrerit pulvinar, sem nibh condimentum eros, in congue enim eros vitae ligula. Maecenas sit amet bibendum urna. Pellentesque sit amet lobortis nunc. Nunc vehicula turpis sed varius suscipit. Nullam eget lacus vitae augue maximus vestibulum. Mauris rutrum tempor velit feugiat convallis. Etiam pretium vel nunc eu tincidunt. In hac habitasse platea dictumst. 
+The website is **currently under development** 🛠.
+Please ignore all but the banner!
 
-OUSPG teaches several courses at the university: 
-
-* Computer Security
-* Computer Engineering
-* Software Engineering
-* Software Project
-* Embedded Software Project
-
-See also: OUSPG tools available on our Github page.
-
-{{< button href="#button" target="_self" >}}
-More information
-{{< /button >}}
