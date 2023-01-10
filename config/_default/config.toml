@@ -1,5 +1,5 @@
 theme = "congo"
-baseURL = "http://localhost:1313/"
+baseURL = "https://ouspg.org/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
