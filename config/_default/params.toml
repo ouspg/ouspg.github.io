@@ -18,7 +18,7 @@ enableCodeCopy = true
 # robots = ""
 
 [header]
-  layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
+  layout = "basic" # valid options: basic, hamburger, hybrid, custom
   # logo = "images/cropped_logo.png"
   logo = "/images/draw/multicolour_base_min1_brighter.svg"
   showTitle = true
