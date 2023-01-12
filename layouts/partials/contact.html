@@ -1,6 +1,7 @@
 {{ with .Site.GetPage "/contact" }}
-<div class="mt-[3rem] pt-[2rem] text-center shadow-lg">
-<section class="p-2 prose dark:prose-invert">{{ .Content | emojify }}</section>
+<a name="call-to-action"></a>
+<div class="mt-[3rem] pt-[2rem] text-center shadow-md rounded-md bg-neutral-100 dark:bg-neutral-900 shadow-neutral-200 dark:shadow-neutral-900">
+<section class="p-2 prose dark:prose-invert first-line:uppercase">{{ .Content | emojify }}</section>
 
 <hr class="border ml-[4rem] mr-[4rem] ">
 

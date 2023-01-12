@@ -16,8 +16,8 @@ showHeadingAnchors: false
 
 <!-- ## {{< icon "lightbulb" >}} -->
 
-## Call to Action
+<!-- ## Call to Action -->
 
-For collaboration inquiries, learning and working possibilities, and any other questions, please
+***For collaboration inquiries, learning and working possibilities, and any other questions, please***
 
 ### **Send an email to ouspg@ouspg.org**
