@@ -1,16 +1,11 @@
 {{ with .Site.GetPage "/contact" }}
-
-<div class="mt-[3rem] pt-[2rem] text-center border rounded-lg">
-
-
-
+<div class="mt-[3rem] pt-[2rem] text-center shadow-lg">
 <section class="p-2 prose dark:prose-invert">{{ .Content | emojify }}</section>
 
-<!-- <h1> {{ .Title }} </h1> -->
 <hr class="border ml-[4rem] mr-[4rem] ">
 
 <a href="https://www.oulu.fi/en/university/faculties-and-units/faculty-information-technology-and-electrical-engineering/itee-contact-information" target="_blank" 
-class="flex flex-col items-center mt-3 bg-white shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+class="flex flex-col items-center mt-3 bg-white md:flex-row md:max-w-xl">
     {{ $svg := resources.Get "/images/unioulu.svg" }}
     <!-- <div class="text-primary-700 dark:text-primary-400 object-cover p-6 w-full max-w-sm rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"> -->
     <div class="text-primary-700 dark:text-primary-400 object-cover rounded-t-lg h-auto w-[8rem] sm:w-[10rem] md:p-6  md:h-auto md:w-48 md:rounded-none md:rounded-l-lg">
