@@ -1,0 +1,17 @@
+
+<div class="pt-1">  
+    <div class="container m-auto px-2  text-primary-700 dark:text-primary-200 md:px-12 xl:px-0">
+        <div class="mx-auto grid gap-2 md:w-4/4 lg:w-full md:grid-cols-2 lg:grid-cols-4">
+
+{{ range $e_index, $p := index .Site.Data (.Scratch.Get "dataSet") }}
+            <div class="relative bg-neutral-200 dark:bg-primary-700 rounded-2xl shadow-lg px-6 py-6 sm:px-10 lg:px-6">
+                <!-- <img src="{{ $p.openGraphImageUrl }}" class="-mt-8  ml-auto " alt="illustration" loading="lazy" width="900" height="600"> -->
+                <div class="mt-1 space-y-4 text-sm font-medium">
+                    <p class="mb-6">{{ $p.description}}</p>
+                </div>
+                <a href="{{ $p.url }}" target="_blank" type="button" class="absolute inline-block px-4 py-1.5 bottom-3 font-semibold text-xs leading-tight uppercase rounded shadow-md hover:bg-primary-300 hover:dark:bg-primary-600 hover:shadow-lg">Learn more</a>
+            </div>
+{{ end }}
+        </div>
+    </div>
+</div>

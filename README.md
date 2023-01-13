@@ -22,3 +22,39 @@ Sample configuration:
 ```toml
 notification1 = { enabled = true, info_full = "Go check this wonderful search engine!", info_short = "Here is Google.", url = "https://google.com" }
 ```
+
+
+## Dynamic content generation
+
+### Content discovery
+
+Repository needs content topics set before it can be discovered, filtered and categorised.
+Topic `learning` is used to list repositories which are used in teaching.
+
+### Acquiring data
+
+
+To get repository metadata from the OUSPG org, use GitHub CLI to include only useful fields for presentation purposes.
+Authentication is required beforehand unless tokens have been used.
+
+```console
+gh repo list ouspg --json url,description,name,repositoryTopics,stargazerCount,openGraphImageUrl
+```
+
+Filter by repository topic with `jq`
+```console
+jq ' map(select(.repositoryTopics[]?.name=="learning"))' out.json
+```
+
+Sort by stars:
+```console
+jq ' map(select(.repositoryTopics[]?.name=="learning")) | sort_by(.stargazerCount)' out.json
+```
+
+
+
+Combined command with GH cli
+```console
+gh repo list ouspg --json url,description,name,repositoryTopics,stargazerCount,openGraphImageUrl --jq 'map(select(.repositoryTopics[]?.name=="learning")) | sort_by(.stargazerCount)'
+
+```
