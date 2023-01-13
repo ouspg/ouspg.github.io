@@ -1,5 +1,7 @@
 ---
 title: "Learning opportunities in OUSPG"
+secondTitle: "Overview"
+buttonThirdTitle: "Practicalities" # Use this to control first button name and href
 headless: false
 author: Oulu University Secure Programing Group
 layout: learning

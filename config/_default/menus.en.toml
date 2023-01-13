@@ -22,7 +22,7 @@
 
 [[main]]
   name = "News"
-  pageRef = "posts"
+  pageRef = "news"
   weight = 30
 
 [[main]]

@@ -18,13 +18,13 @@ default $cover }}
     {{ $bundle.Content | markdownify }}
   </p>
 
-  <div class="p-3 mb-6 flex justify-left content-center gap-3 flex-col sm:flex-row">
+  <div class="p-3 mb-6 flex justify-left content-center gap-3 flex-row ">
     <a
-      href="#practicalities"
+      href="#{{ .Page.Params.ButtonThirdTitle }}"
       class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-700 dark:hover:!bg-primary-600"
       role="button"
     >
-      Practicalities
+      {{ .Page.Params.ButtonThirdTitle }}
     </a>
     <!-- <a
       class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-700 dark:hover:!bg-primary-600"
@@ -35,29 +35,26 @@ default $cover }}
   </div>
 
 
+  {{ .Scratch.Set "dataSet" "ouspg_repositories" }} {{ partial "repositories.html" . }}
 
-  {{ .Scratch.Set "dataSet" "learning" }} {{ partial "repositories.html" . }}
+  <h2 class="mt-10 mb-10 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+    {{ .Page.Params.SecondTitle }}
+  </h2>
 
-  <h3 class="mt-10 mb-10 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-    Overview of the courses
-  </h3>
-
-  {{ .Scratch.Set "dataSectionTitle" "All OUSPG courses" }} 
   {{ .Scratch.Set "dataSection" "ouspg_courses.md" }} 
   {{ partial "according_section.html" (dict "page" . "bundle" $bundle) }}
 
-  {{ .Scratch.Set "dataSectionTitle" "FITech courses" }} 
   {{ .Scratch.Set "dataSection" "fitech.md" }} 
   {{ partial "according_section.html" (dict "page" . "bundle" $bundle) }}
-  {{ .Scratch.Set "dataSectionTitle" "Other relevant courses" }} 
+  
   {{ .Scratch.Set "dataSection" "other.md" }} 
   {{ partial "according_section.html" (dict "page" . "bundle" $bundle) }}
 
   {{ with $bundle.Resources.GetMatch "midcontent.md" }}
 
-  <h3 id="practicalities" class="mt-10 mb-10 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+  <h2 id="{{ .Title }}" class="mt-10 mb-10 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
     {{ .Title }}
-  </h3>
+  </h2>
 
   <section
     class="mt-10 flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row"
