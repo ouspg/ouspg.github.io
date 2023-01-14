@@ -29,7 +29,6 @@
     class="container m-auto px-2 text-primary-700 dark:text-primary-200 md:px-12 xl:px-0" x-data="loadRepositories('learning')"
   >
   <div class="flex flex-row m-2 center justify-center">
-  <!-- <p class="mt-2 ml-4 font-bold leading-tight uppercase pr-2" >Filter </p> -->
     {{ $tags := slice "learning" "fuzzing" "cryptography"}}
     {{ range $tags }}
     <button id="button-{{ . }}" x-on:click="search = '{{ . }}'" 

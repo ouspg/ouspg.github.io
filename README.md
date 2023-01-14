@@ -28,8 +28,8 @@ notification1 = { enabled = true, info_full = "Go check this wonderful search en
 
 ### Content discovery
 
-Repository needs content topics set before it can be discovered, filtered and categorised.
-Topic `learning` is used to list repositories which are used in teaching.
+Target repositories under [OUSPG](https://github.com/ouspg) need content topics set before it can be discovered, filtered and categorised.
+Topic `learning` is used to list repositories which are are specifically meant for learning.
 
 ### Acquiring data
 
