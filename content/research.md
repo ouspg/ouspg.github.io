@@ -5,9 +5,9 @@ date: 2023-01-04
 lastmod: 2023-01-05
 showDateUpdated: true
 showDate: false
-showAuthor: true
+showAuthor: false
 showEdit: true
-showPagination: false
+showPagination: true 
 showTableOfContents: true
 showReadingTime: false
 ---

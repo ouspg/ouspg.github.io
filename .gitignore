@@ -5,6 +5,10 @@ node_modules/
 **/public/
 **/resources/_gen/
 
+# Work in Progress files but not tracked
+
+wip
+
 # Executable may be added to repository
 hugo.exe
 hugo.darwin

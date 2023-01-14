@@ -17,12 +17,12 @@
 
 [[main]]
   name = "Learning"
-  pageRef = ""
+  pageRef = "/learning"
   weight = 20
 
 [[main]]
   name = "News"
-  pageRef = "posts"
+  pageRef = "news"
   weight = 30
 
 [[main]]

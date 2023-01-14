@@ -1,0 +1,28 @@
+<!-- Must use .Scratch.Set beforehand and pass the page content!  -->
+{{ with .bundle.Resources.GetMatch (.page.Scratch.Get "dataSection") }}
+<div x-data="{open:false}" class="mx-auto bg-red-50">
+  <div
+    @click="open=!open"
+    class="flex justify-between items-center bg-red-200 cursor-pointer"
+  >
+    <p class="px-4 font-bold">{{ .Title }}</p>
+    <button
+      x-html="open ? '-' :'+' "
+      class="px-2 text-black font-bold text-3xl"
+    ></button>
+  </div>
+  <section
+    class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row"
+  >
+    <div
+      x-show="open"
+      class="mx-4 py-4 min-w-0 min-h-0 max-w-prose grow"
+      x-transition
+    >
+      {{ .Content | emojify }}
+    </div>
+  </section>
+  <hr class="h-[0.1rem] bg-slate-500" />
+</div>
+
+{{ end }}

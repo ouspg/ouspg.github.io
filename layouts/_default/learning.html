@@ -1,0 +1,81 @@
+{{ define "main" }} {{- $images := .Resources.ByType "image" }} {{- $cover :=
+$images.GetMatch "*cover*" }} {{- $feature := $images.GetMatch "*feature*" |
+default $cover }}
+<article>
+  {{ $bundle := .Site.GetPage "page" "learning" }}
+  <header class="max-w-prose">
+    {{ if .Params.showBreadcrumbs | default
+    (.Site.Params.article.showBreadcrumbs | default false) }} {{ partial
+    "breadcrumbs.html" . }} {{ end }}
+
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      {{ $bundle.Title | emojify }}
+    </h1>
+  </header>
+  <p
+    class="mb-3 font-light text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left"
+  >
+    {{ $bundle.Content | markdownify }}
+  </p>
+
+  <div class="p-3 mb-6 flex justify-left content-center gap-3 flex-row ">
+    <a
+      href="#{{ .Page.Params.ButtonThirdTitle }}"
+      class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-700 dark:hover:!bg-primary-600"
+      role="button"
+    >
+      {{ .Page.Params.ButtonThirdTitle }}
+    </a>
+    <!-- <a
+      class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-700 dark:hover:!bg-primary-600"
+      role="button"
+    >
+      In FITech
+    </a> -->
+  </div>
+
+
+  {{ .Scratch.Set "dataSet" "ouspg_repositories" }} {{ partial "repositories.html" . }}
+
+  <h2 class="mt-10 mb-10 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+    {{ .Page.Params.SecondTitle }}
+  </h2>
+
+  {{ .Scratch.Set "dataSection" "ouspg_courses.md" }} 
+  {{ partial "according_section.html" (dict "page" . "bundle" $bundle) }}
+
+  {{ .Scratch.Set "dataSection" "fitech.md" }} 
+  {{ partial "according_section.html" (dict "page" . "bundle" $bundle) }}
+  
+  {{ .Scratch.Set "dataSection" "other.md" }} 
+  {{ partial "according_section.html" (dict "page" . "bundle" $bundle) }}
+
+  {{ with $bundle.Resources.GetMatch "midcontent.md" }}
+
+  <h2 id="{{ .Title }}" class="mt-10 mb-10 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+    {{ .Title }}
+  </h2>
+
+  <section
+    class="mt-10 flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row"
+  >
+    {{ if and (.Params.showTableOfContents | default
+    (.Site.Params.article.showTableOfContents | default false)) (in
+    .TableOfContents "<ul") }}
+    <div
+      class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8"
+    >
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+        {{ partial "toc.html" . }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="min-w-0 min-h-0 max-w-prose grow">{{ .Content | emojify }}</div>
+  </section>
+  {{ end }}
+  <footer class="pt-8 max-w-prose print:hidden">
+    {{ partial "author.html" . }} {{ partial "sharing-links.html" . }} {{
+    partial "article-pagination.html" . }}
+  </footer>
+</article>
+{{ end }}
