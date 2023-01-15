@@ -2121,6 +2121,66 @@ body:has(#menu-controller:checked) {
   max-height: 10rem;
 }
 
+.max-h-2 {
+  max-height: 0.5rem;
+}
+
+.max-h-5 {
+  max-height: 1.25rem;
+}
+
+.max-h-4 {
+  max-height: 1rem;
+}
+
+.max-h-3 {
+  max-height: 0.75rem;
+}
+
+.max-h-\[4rem\] {
+  max-height: 4rem;
+}
+
+.max-h-\[2rem\] {
+  max-height: 2rem;
+}
+
+.max-h-6 {
+  max-height: 1.5rem;
+}
+
+.max-h-7 {
+  max-height: 1.75rem;
+}
+
+.max-h-8 {
+  max-height: 2rem;
+}
+
+.max-h-16 {
+  max-height: 4rem;
+}
+
+.max-h-48 {
+  max-height: 12rem;
+}
+
+.max-h-40 {
+  max-height: 10rem;
+}
+
+.max-h-20 {
+  max-height: 5rem;
+}
+
+.max-h-28 {
+  max-height: 7rem;
+}
+
+.max-h-32 {
+  max-height: 8rem;
+}
+
 .min-h-0 {
   min-height: 0px;
 }
@@ -2443,6 +2503,14 @@ body:has(#menu-controller:checked) {
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.whitespace-nowrap {
   white-space: nowrap;
 }
 
@@ -3986,6 +4054,10 @@ body:has(#menu-controller:checked) {
     grid-template-columns: 15;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -4162,6 +4234,11 @@ body:has(#menu-controller:checked) {
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 

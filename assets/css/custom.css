@@ -8,3 +8,25 @@
 #main-content article header {
     padding-bottom: 2rem;
 }
+
+.repository {
+   line-height: 1.3rem;
+}
+
+@media (max-width: 640px) {
+
+.repository {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2; 
+}
+
+.repository:hover {
+   overflow: visible;
+   text-overflow: normal;
+   display: block;
+}
+
+ }
