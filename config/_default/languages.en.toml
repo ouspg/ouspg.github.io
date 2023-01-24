@@ -12,7 +12,7 @@ copyright = "Copyright © 2023, Oulu University Secure Programming Group"
 
 dateFormat = ":date_full"
 
-notification1 = { enabled = true, info_full = "We are hiring. Come to Pesti Career Day in 19.1.2023!", info_short = "We are hiring!", url = "https://pestipaivat.fi/en/" }
+notification1 = { enabled = false, info_full = "We are hiring. Come to Pesti Career Day in 19.1.2023!", info_short = "We are hiring!", url = "https://pestipaivat.fi/en/" }
 
 [author]
   name = "Oulu University Secure Programming Group"
