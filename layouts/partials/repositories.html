@@ -28,8 +28,8 @@
   <div
     class="container m-auto text-primary-700 dark:text-primary-200 md:px-12 xl:px-0" x-data="loadRepositories('learning')"
   >
-  <div class="flex flex-row m-2 center justify-center">
-    {{ $tags := slice "learning" "fuzzing" "cryptography"}}
+  <div class="flex flex-row flex-wrap m-2 center justify-center whitespace-nowrap">
+    {{ $tags := slice "learning" "fuzzing" "cryptography" "web" "shellcoding" "side-channel-attacks" "dfir" "privacy" "socialengineering" "embedded"}}
     {{ range $tags }}
     <button id="button-{{ . }}" x-on:click="search = '{{ . }}'" 
     class="max-w-fit p-1 m-1 hover:bg-neutral-300 focus:bg-neutral-300 border-2 border-neutral-300 rounded-md flex items-center justify-center text-sm font-medium"
