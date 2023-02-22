@@ -1,4 +1,4 @@
-/*! Congo v2.4.2 | MIT License | https://github.com/jpanther/congo */
+/*! Congo v2.5.2 | MIT License | https://github.com/jpanther/congo */
 
 /*! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
 
@@ -1054,7 +1054,8 @@ body button {
 /* Hamburger menu */
 
 body:has(#menu-controller:checked) {
-  overflow-y: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #menu-button:has(#menu-controller:checked) {
@@ -1207,64 +1208,37 @@ body:has(#menu-controller:checked) {
 
 /* Background */
 
-.prose .chroma {
-  position: static;
+.chroma {
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-neutral-50), var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-700), var(--tw-text-opacity));
 }
 
-.dark .prose .chroma {
+.dark .chroma {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-neutral-700), var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-200), var(--tw-text-opacity));
 }
 
-/* LineTableTD */
-
-.chroma .lntd,
-.chroma .lntd pre {
+.chroma pre {
   margin: 0px;
-  overflow: hidden;
-  border-style: none;
   padding: 0px;
-  vertical-align: top;
 }
 
 /* LineTable */
 
 .chroma .lntable {
+  margin: 0px;
   display: block;
   width: auto;
-  overflow-x: auto;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  overflow: auto;
   font-size: 1rem;
   line-height: 1.5rem;
-  border-spacing: 0;
-}
-
-/* LineTable Line */
-
-.chroma .lntable .line {
-  padding-right: 1rem;
-}
-
-/* LineHighlight */
-
-.chroma .hl {
-  display: block;
-  width: auto;
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-primary-100), var(--tw-bg-opacity));
-}
-
-.dark .chroma .hl {
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-primary-900), var(--tw-bg-opacity));
 }
 
 /* LineNumbersTable */
@@ -1273,11 +1247,9 @@ body:has(#menu-controller:checked) {
 
 .chroma .lnt,
 .chroma .ln {
-  margin-right: 0.4em;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  margin-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-600), var(--tw-text-opacity));
 }
@@ -1286,6 +1258,29 @@ body:has(#menu-controller:checked) {
 .chroma .ln {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-300), var(--tw-text-opacity));
+}
+
+.chroma .lntd {
+  padding: 0px;
+  vertical-align: top;
+}
+
+.chroma .lntd:last-of-type {
+  width: 100%;
+}
+
+/* LineHighlight */
+
+.chroma .hl {
+  display: block;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-primary-100), var(--tw-bg-opacity));
+}
+
+.dark .chroma .hl {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-primary-900), var(--tw-bg-opacity));
 }
 
 /* Keyword */
@@ -1910,6 +1905,10 @@ body:has(#menu-controller:checked) {
   margin-top: -1rem;
 }
 
+.-mt-3 {
+  margin-top: -0.75rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -1952,6 +1951,14 @@ body:has(#menu-controller:checked) {
 
 .mb-\[2px\] {
   margin-bottom: 2px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.-mb-px {
+  margin-bottom: -1px;
 }
 
 .block {
@@ -2024,6 +2031,10 @@ body:has(#menu-controller:checked) {
 
 .max-h-\[10rem\] {
   max-height: 10rem;
+}
+
+.max-h-\[4\.5rem\] {
+  max-height: 4.5rem;
 }
 
 .min-h-0 {
@@ -2107,6 +2118,10 @@ body:has(#menu-controller:checked) {
   max-width: 80rem;
 }
 
+.max-w-\[6rem\] {
+  max-width: 6rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -2125,6 +2140,10 @@ body:has(#menu-controller:checked) {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.shrink {
+  flex-shrink: 1;
 }
 
 .grow {
@@ -2238,6 +2257,10 @@ body:has(#menu-controller:checked) {
   white-space: nowrap;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .\!rounded-md {
   border-radius: 0.375rem !important;
 }
@@ -2282,6 +2305,14 @@ body:has(#menu-controller:checked) {
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-solid {
@@ -2513,6 +2544,10 @@ body:has(#menu-controller:checked) {
   padding-top: 1rem;
 }
 
+.pt-0 {
+  padding-top: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2601,10 +2636,6 @@ body:has(#menu-controller:checked) {
   font-weight: 400;
 }
 
-.font-thin {
-  font-weight: 100;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -2623,6 +2654,10 @@ body:has(#menu-controller:checked) {
 
 .leading-7 {
   line-height: 1.75rem;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .leading-6 {
@@ -2767,6 +2802,12 @@ body:has(#menu-controller:checked) {
 
 .transition-transform {
   transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2982,6 +3023,14 @@ body:has(#menu-controller:checked) {
   text-decoration-color: rgba(var(--color-primary-500), 1);
 }
 
+.group:hover .group-hover\:decoration-2 {
+  text-decoration-thickness: 2px;
+}
+
+.group:hover .group-hover\:underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
@@ -3104,6 +3153,10 @@ body:has(#menu-controller:checked) {
 
 [dir="rtl"] .rtl\:text-left {
   text-align: left;
+}
+
+.dark .dark\:inline {
+  display: inline;
 }
 
 .dark .dark\:flex {
@@ -3358,6 +3411,10 @@ body:has(#menu-controller:checked) {
     display: none;
   }
 
+  .sm\:max-h-\[7\.5rem\] {
+    max-height: 7.5rem;
+  }
+
   .sm\:w-\[10rem\] {
     width: 10rem;
   }
@@ -3372,6 +3429,10 @@ body:has(#menu-controller:checked) {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:max-w-\[10rem\] {
+    max-width: 10rem;
   }
 
   .sm\:flex-row {
@@ -3422,6 +3483,14 @@ body:has(#menu-controller:checked) {
 
   .sm\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .sm\:text-center {
+    text-align: center;
+  }
+
+  .sm\:text-right {
+    text-align: right;
   }
 
   .sm\:text-lg {
@@ -3580,5 +3649,10 @@ body:has(#menu-controller:checked) {
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
