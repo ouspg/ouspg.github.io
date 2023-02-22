@@ -1,5 +1,5 @@
 ---
-author: Oulu University Secure Programing Group
+author: Oulu University Secure Programming Group
 title: "Oulu University Secure Programming Group"
 showHeadingAnchors: false
 date: 2023-01-04
@@ -24,14 +24,19 @@ OUSPG is active as an academic research group in the University of Oulu since su
 {{< /lead >}}
 
 
-{{< button href="research" target="_self" >}}
+{{< button href="" target="_self" >}}
 Results and Publications
+{{< /button >}}
+{{< button href="learning" target="_self" >}}
+Learning Opportunities
 {{< /button >}}
 
 ---
 
-## Work in Progress 
+<!-- --- -->
 
-The website is **currently under development** and there might be a lack of content.
+<!-- ## Work in Progress  -->
+
+<!-- The website is **currently under development** and there might be a lack of content. -->
 
 

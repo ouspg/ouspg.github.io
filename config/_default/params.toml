@@ -11,6 +11,8 @@ autoSwitchAppearance = false
 courses = ""
 news = ""
 
+mainSections = "news"
+
 enableSearch = false
 enableCodeCopy = true
 

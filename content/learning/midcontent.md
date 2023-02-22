@@ -1,22 +1,34 @@
 ---
 headless: true
 showTableOfContents: true
+showHeadingAnchors: false
 title: "Practicalities"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id luctus risus, interdum euismod massa. Donec ut mi tincidunt, porttitor eros et, vehicula elit. Vestibulum pharetra id mauris nec pretium. Donec quis consequat dui.
+Many of our courses are using similar practicalities and concepts how they will be arranged.
+You will find the common information here.
+
+The most of the courses are utilising GitHub for sharing the exercise assigments and also as return platform (GitHub Classroom).
+Exercises itself require often the use of multiple different operating systems, e.g. Windows and different Linux distributions, and brief overview how to get them locally in physical laboratory classes or remotely, is introduced here.
 
 ## Contact channels
 
-Please to this and this
+At the moment, courses are using single [**Slack Worskpace**](https://compsec-unioulu.slack.com/) as primary contact and discussion channel for teaching purposes.
+You can join there with your `*.oulu.fi`  email address.
+
+{{< alert "comment" >}}
+For other inquiries, use **ouspg@ouspg.org**.
+{{< /alert >}}
+
+
+## Laboratory and virtual machine instructions
+
+Instructions for how to access virtual machines in physical classrooms, and also remotely can be found [here](../guides/laboratories).
 
 ## GitHub Classroom instructions
 
+Instructions for using GitHub Classroom to return your assigments are available [here](../guides/github/). 
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi posuere, ligula ut suscipit cursus, metus lacus efficitur felis, eleifend laoreet diam est eget tellus. Ut malesuada massa nibh. Curabitur commodo elit ut diam dapibus, nec ultricies tortor faucibus. Maecenas iaculis eu arcu at tempor. Cras quis tristique odio. Proin euismod elit nec erat finibus laoreet. Phasellus ultricies ac nibh id tempus. Mauris eu semper felis. Cras tincidunt metus at augue aliquet, nec viverra orci consectetur. Suspendisse elit lacus, pretium at lacus ut, imperdiet lobortis nisi. Mauris risus ex, mollis pretium quam sit amet, dictum ultricies massa. Suspendisse aliquam vulputate sapien, sed volutpat est maximus at. Mauris ullamcorper aliquet massa at pharetra.
 
 
-## Physical laboratory instructions
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi posuere, ligula ut suscipit cursus, metus lacus efficitur felis, eleifend laoreet diam est eget tellus. Ut malesuada massa nibh. Curabitur commodo elit ut diam dapibus, nec ultricies tortor faucibus. Maecenas iaculis eu arcu at tempor. Cras quis tristique odio. Proin euismod elit nec erat finibus laoreet. Phasellus ultricies ac nibh id tempus. Mauris eu semper felis. Cras tincidunt metus at augue aliquet, nec viverra orci consectetur. Suspendisse elit lacus, pretium at lacus ut, imperdiet lobortis nisi. Mauris risus ex, mollis pretium quam sit amet, dictum ultricies massa. Suspendisse aliquam vulputate sapien, sed volutpat est maximus at. Mauris ullamcorper aliquet massa at pharetra.
 
