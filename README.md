@@ -58,3 +58,6 @@ Combined command with GH cli
 gh repo list ouspg --json url,description,name,repositoryTopics,stargazerCount,openGraphImageUrl --jq 'map(select(.repositoryTopics[]?.name=="learning")) | sort_by(.stargazerCount)'
 
 ```
+
+The repository meta information is currently updated automatically in deployment (see workflows) into the `data` folder, but not modified back to the repository.
+The file in the repository serves for development purposes and can be modified locally and updated if needed.
