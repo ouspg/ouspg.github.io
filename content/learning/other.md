@@ -1,4 +1,9 @@
 ---
 title: "Other relevant courses"
 ---
-Something other mentionable stuff.
+
+
+
+| Name            |  Code                          | Peppi |
+| -------------------- | --------------------------------- |-------|
+| Modern Cryptography | 521244S | [Link](https://opas.peppi.oulu.fi/en/course/521244S/19996)|

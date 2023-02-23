@@ -1,22 +1,52 @@
 ---
 headless: true
 showTableOfContents: true
+showHeadingAnchors: false
+date: 2023-02-23
+lastmod: 2023-02-23
+showEdit: true 
+showDateUpdated: true
 title: "Practicalities"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id luctus risus, interdum euismod massa. Donec ut mi tincidunt, porttitor eros et, vehicula elit. Vestibulum pharetra id mauris nec pretium. Donec quis consequat dui.
+Many of the courses are using similar practicalities and concepts on how they will be arranged.
+You will find the common information here.
 
 ## Contact channels
 
-Please to this and this
+At the moment, courses are using a single [**Slack Workspace**](https://compsec-unioulu.slack.com/) as the primary contact and discussion channel for teaching purposes.
+You can join there with your `oulu.fi` email address.
+For other inquiries, use ouspg@ouspg.org.
+
+{{< button href="https://compsec-unioulu.slack.com" target="_blank" >}}
+Slack Workspace
+{{< /button >}}
+
+
+{{< button href="mailto:ouspg@ouspg.org" target="_blank" >}}
+ouspg@ouspg.org
+{{< /button >}}
+
+
+
+## Laboratory and virtual machine instructions
+
+Exercises themselves require sometimes the use of multiple different operating systems, e.g. Windows and different Linux distributions.
+
+A brief overview of how to get them locally in physical laboratory classes and remotely is introduced in the following link.
+
+{{< button href="../guides/laboratories" target="_blank" >}}
+Virtual machine instructions
+{{< /button >}}
 
 ## GitHub Classroom instructions
 
+Most of the courses are utilising GitHub for providing the exercise assignments and related material, and also as a return platform (GitHub Classroom).
+Instruction pointer for using GitHub Classroom to return your assignments are available here. 
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi posuere, ligula ut suscipit cursus, metus lacus efficitur felis, eleifend laoreet diam est eget tellus. Ut malesuada massa nibh. Curabitur commodo elit ut diam dapibus, nec ultricies tortor faucibus. Maecenas iaculis eu arcu at tempor. Cras quis tristique odio. Proin euismod elit nec erat finibus laoreet. Phasellus ultricies ac nibh id tempus. Mauris eu semper felis. Cras tincidunt metus at augue aliquet, nec viverra orci consectetur. Suspendisse elit lacus, pretium at lacus ut, imperdiet lobortis nisi. Mauris risus ex, mollis pretium quam sit amet, dictum ultricies massa. Suspendisse aliquam vulputate sapien, sed volutpat est maximus at. Mauris ullamcorper aliquet massa at pharetra.
+{{< button href="../guides/github" target="_blank" >}}
+GitHub instructions
+{{< /button >}}
 
 
-## Physical laboratory instructions
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi posuere, ligula ut suscipit cursus, metus lacus efficitur felis, eleifend laoreet diam est eget tellus. Ut malesuada massa nibh. Curabitur commodo elit ut diam dapibus, nec ultricies tortor faucibus. Maecenas iaculis eu arcu at tempor. Cras quis tristique odio. Proin euismod elit nec erat finibus laoreet. Phasellus ultricies ac nibh id tempus. Mauris eu semper felis. Cras tincidunt metus at augue aliquet, nec viverra orci consectetur. Suspendisse elit lacus, pretium at lacus ut, imperdiet lobortis nisi. Mauris risus ex, mollis pretium quam sit amet, dictum ultricies massa. Suspendisse aliquam vulputate sapien, sed volutpat est maximus at. Mauris ullamcorper aliquet massa at pharetra.
 
