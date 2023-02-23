@@ -23,10 +23,12 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-        echo -n "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token && \\
-        gh repo list ouspg --json url,description,name,repositoryTopics,stargazerCount,openGraphImageUrl --jq 'map(select(.repositoryTopics[]?.name=="learning")) | sort_by(.stargazerCount)' > data/ouspg_repositories.json && \\
-        hugo --minify && cp CNAME public/
+          echo -n "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token && \\
+          gh repo list ouspg --json url,description,name,repositoryTopics,stargazerCount,openGraphImageUrl --jq 'map(select(.repositoryTopics[]?.name=="learning")) | sort_by(.stargazerCount)' > data/ouspg_repositories.json && \\
+          hugo --minify && cp CNAME public/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
