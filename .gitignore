@@ -1,5 +1,6 @@
 # Dependency directories
 node_modules/
+.vscode/
 
 # Generated files by hugo
 **/public/
