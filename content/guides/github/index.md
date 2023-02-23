@@ -6,13 +6,13 @@ author: Oulu University Secure Programing Group
 date: 2023-02-22
 lastmod: 2023-02-22
 showDateUpdated: true
-showDate: false
+showDate: true
 showAuthor: false
-showEdit: false
+showEdit: true
 showPagination: true 
 showTableOfContents: true
-showReadingTime: false
-showBreadcrumbs: false
+showReadingTime: true
+showBreadcrumbs: true
 ---
 
-This is a test, once again.
+This is a work in progress.
