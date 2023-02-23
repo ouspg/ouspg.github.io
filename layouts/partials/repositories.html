@@ -32,7 +32,7 @@
     {{ $tags := slice "learning" "fuzzing" "cryptography" "web" "shellcoding" "side-channel-attacks" "dfir" "privacy" "socialengineering" "embedded"}}
     {{ range $tags }}
     <button id="button-{{ . }}" x-on:click="search = '{{ . }}'" 
-    class="max-w-fit p-1 m-1 hover:bg-neutral-300 focus:bg-neutral-300 border-2 border-neutral-300 rounded-md flex items-center justify-center text-sm font-medium"
+    class="max-w-fit p-1 m-1 hover:bg-neutral-300 focus:bg-neutral-300 dark:hover:bg-primary-700 dark:focus:bg-primary-700 border-2 border-neutral-300 dark:border-primary-700 rounded-md flex items-center justify-center text-sm font-medium"
     >
         {{- . -}}
     </button>
@@ -44,7 +44,7 @@
 
         <template x-for="item in filteredRepos" :key="item.name">
       <div
-        class="sm:max-h-auto relative bg-neutral-200 text-primary-900 dark:text-primary-200 dark:bg-primary-900 rounded-2xl shadow-lg px-6 py-4 sm:px-10 lg:px-6 transition duration-150 ease-in-out transform hover:scale-105"
+        class="sm:max-h-auto relative bg-neutral-200 text-primary-900 dark:text-primary-200 dark:bg-primary-700 rounded-2xl shadow-lg px-6 py-4 sm:px-10 lg:px-6 transition duration-150 ease-in-out transform hover:scale-105"
         x-on:click="" > 
         
      <div class="mb-6 repository mt-1 space-y-4 text-md md:text-sm font-bold "
@@ -55,7 +55,7 @@
           x-bind:href="item.url"
           target="_blank"
           type="button"
-          class="absolute inline-block p-1 sm:px-4 sm:py-1.5 bottom-3 font-semibold text-xs leading-tight uppercase rounded shadow-md hover:bg-primary-800 hover:text-primary-50 hover:dark:bg-primary-600 hover:shadow-lg"
+          class="absolute inline-block p-1 sm:px-4 sm:py-1.5 bottom-3 font-semibold text-xs leading-tight uppercase rounded shadow-md dark:shadow-md hover:bg-primary-800 hover:text-primary-50 hover:dark:bg-primary-600 hover:shadow-lg"
           >See more {{ partial "icon.html" "github" }}
         </a>
           </div>

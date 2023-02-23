@@ -28,7 +28,7 @@ OUSPG is active as an academic research group in the University of Oulu since su
 Results and Publications
 {{< /button >}}
 {{< button href="learning" target="_self" >}}
-Learning Opportunities
+Learning 
 {{< /button >}}
 
 ---

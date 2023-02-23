@@ -5,7 +5,7 @@ showHeadingAnchors: false
 title: "Practicalities"
 ---
 
-Many of our courses are using similar practicalities and concepts how they will be arranged.
+Many of the courses are using similar practicalities and concepts how they will be arranged.
 You will find the common information here.
 
 The most of the courses are utilising GitHub for sharing the exercise assigments and also as return platform (GitHub Classroom).
