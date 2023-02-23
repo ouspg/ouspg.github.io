@@ -6,17 +6,20 @@ author: Oulu University Secure Programing Group
 date: 2023-02-22
 lastmod: 2023-02-22
 showDateUpdated: true
-showDate: false
+showDate: true
 showAuthor: false
-showEdit: false
+showEdit: true
 showPagination: true 
 showTableOfContents: true
-showReadingTime: false
-showBreadcrumbs: false
+showReadingTime: true
+showBreadcrumbs: true
 showTableOfContents: true
 ---
 
-Laboratory assignments utilize a set of various tools and also handle potentially malicious files in Lab 3. Thus it is recommended to handle files in an isolated environment, or at least the execution of tools happens in an isolated environment at some level.
+Work in progress. Don't care.
+
+Laboratory assignments utilise a set of various tools and also handle potentially malicious files  on some cases.
+
 
 A straightforward solution for this is pre-configured virtual machines - if you have enough disk space and performance on your computer to use them. For Windows users - this is the most convenient way.
 

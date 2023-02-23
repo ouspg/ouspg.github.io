@@ -14,12 +14,19 @@ You will find the common information here.
 
 ## Contact channels
 
-At the moment, courses are using a single [**Slack Worskpace**](https://compsec-unioulu.slack.com/) as the primary contact and discussion channel for teaching purposes.
+At the moment, courses are using a single [**Slack Workspace**](https://compsec-unioulu.slack.com/) as the primary contact and discussion channel for teaching purposes.
 You can join there with your `oulu.fi` email address.
+For other inquiries, use ouspg@ouspg.org.
 
-{{< alert "comment" >}}
-For other inquiries, use **ouspg@ouspg.org**.
-{{< /alert >}}
+{{< button href="https://compsec-unioulu.slack.com" target="_blank" >}}
+Slack Workspace
+{{< /button >}}
+
+
+{{< button href="mailto:ouspg@ouspg.org" target="_blank" >}}
+ouspg@ouspg.org
+{{< /button >}}
+
 
 
 ## Laboratory and virtual machine instructions
