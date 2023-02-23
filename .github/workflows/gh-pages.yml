@@ -23,8 +23,6 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo -n "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token && \\
           gh repo list ouspg --json url,description,name,repositoryTopics,stargazerCount,openGraphImageUrl --jq 'map(select(.repositoryTopics[]?.name=="learning")) | sort_by(.stargazerCount)' > data/ouspg_repositories.json && \\
