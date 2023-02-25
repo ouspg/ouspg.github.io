@@ -7,6 +7,7 @@ title: "All OUSPG courses"
 | -------------------- | --------------------------------- |-------|
 | Computer Security               | 521155S | [Link](https://opas.peppi.oulu.fi/en/course/521155S/7558)|
 | Cryptographic systems and their weaknesses | 521254S | [Link](https://opas.peppi.oulu.fi/en/course/521254S/16803)|
+| Cyber Security Project | IC00AK16 | [Link](https://opas.peppi.oulu.fi/en/course/IC00AK16/35025) |
 | Embedded Software Project| 521275A | [Link](https://opas.peppi.oulu.fi/en/course/521275A/2573) |
 | Empirical Research in Computer Security | 521246S | [Link](https://opas.peppi.oulu.fi/en/course/521246S/19997)
 | Introduction to Cyber Security Testing | IC00AI82 | [Link](https://opas.peppi.oulu.fi/en/course/IC00AI82/32356)
