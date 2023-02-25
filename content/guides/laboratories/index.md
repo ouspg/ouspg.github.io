@@ -40,8 +40,7 @@ These virtual machines are also located on the University network drive and can 
 | Arch Linux (with Black Arch repos) | Minimal distribution, [good documentation](https://wiki.archlinux.org/title/Arch_Linux), any tool can be easily installed | Any | arch:arch |
 
 
-
-## Classroom-specific instructions 
+## Using VMs in the classroom
 
 These instructions apply to (TS135/TS137) or any computer with VMware or Virtualbox hypervisor installed.
 You must be on the University premises and can access to laboratory computer which has a hypervisor installed.
@@ -117,19 +116,27 @@ What you need to install, will vary based on the course and exercise, but genera
 
 If you are already using a Linux-based system, you can install the required packages most likely by using a system- or programming language-specific package manager, or by compiling from the source.
 
-You can also use virtual machines with VirtualBox, for example, or container runner instead.
-We recommend [Podman](https://podman.io/) as container runner.
+You can also use virtual machines if you don't want to educate yourself with dependency problems.
+
+Container runner can be also a fast way to use some rarer command-line-based tools from Kali Linux, for example. 
+We recommend [Podman](https://podman.io/getting-started/installation) as a container runner.
+
+Then you can start working with [Kali image](https://hub.docker.com/r/kalilinux/kali-rolling) as:
+```sh
+podman run -it --rm -v "$(pwd):/files" docker.io/kalilinux/kali-rolling bash
+```
 
 ### MacOS
 
-If you are using macOS, you can install many packages by using [Homebrew](https://brew.sh/) or [Nix](https://nixos.org/) or running them as containers with Docker or Podman.
+If you are using macOS, you can install many packages by using [Homebrew](https://brew.sh/) or [Nix](https://nixos.org/) or running them as containers with Docker or [Podman](https://podman.io/getting-started/installation).
 
 With an ARM-based Mac, you might have some difficulties with some tools, which you cannot compile yourself.
-Virtualisation will be rather slow but might improve in the future.
+Virtualisation into another instruction set will be rather slow but might improve in the future.
 
 ### Windows
 
-Only some of the tools will be directly available on Windows, but you can alternatively use [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) instead of the full-blown virtual machine, and install in there like in regular Linux.
+Only some of the tools will be directly available on Windows, but you can alternatively use [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) instead of the full-blown virtual machine.
+Then use it like a regular Linux machine.
 
 ### Other
 
