@@ -5,6 +5,8 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 paginate = 10
 summaryLength = 0
+# Update last modification date automatically
+enableGitInfo = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

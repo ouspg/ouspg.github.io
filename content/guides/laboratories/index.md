@@ -4,7 +4,7 @@ headless: false
 author: Oulu University Secure Programing Group
 # layout: learning
 date: 2023-02-21
-lastmod: 2023-02-24
+lastmod : [':git', ':fileModTime']
 showDateUpdated: true
 showDate: false
 showAuthor: false
@@ -41,20 +41,20 @@ These virtual machines are also located on the University network drive and can 
 
 
 
-## Using VMs in the classroom
+## Classroom-specific instructions 
 
 These instructions apply to (TS135/TS137) or any computer with VMware or Virtualbox hypervisor installed.
 You must be on the University premises and can access to laboratory computer which has a hypervisor installed.
 
 ### Accessing the network drive
 
-Mount network drive **by using PowerShell** (If the domain 'kaappi' is not found, you can use `\\cifs.isi.oulu.fi\Virtuaalikoneet$"`
+Mount network drive **by using PowerShell** (If the domain 'kaappi' is not found, you can use "\\cifs.isi.oulu.fi\Virtuaalikoneet$")
 
 ```powershell
 New-PSDrive -Persist -Name "Z" -PSProvider "FileSystem" -Root "\\kaappi\Virtuaalikoneet$"
 ```
 
-You should be able to find the new `Z:` drive named `Virtuaalikoneet$` by using File Explorer.
+You should be able to find the new `Z:` drive named as Virtuaalikoneet$ by using File Explorer.
 In the `Z:\VMware`, you will find virtual machines from the CyberSpecialisation folder.
 
 ### Running the machines
@@ -129,8 +129,7 @@ Virtualisation will be rather slow but might improve in the future.
 
 ### Windows
 
-Only some of the tools will be directly available on Windows, but you can alternatively use [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) instead of the full-blown virtual machine.
-Install tools like in the regular Linux machine.
+Only some of the tools will be directly available on Windows, but you can alternatively use [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) instead of the full-blown virtual machine, and install in there like in regular Linux.
 
 ### Other
 
