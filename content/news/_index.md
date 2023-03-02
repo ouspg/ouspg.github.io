@@ -17,4 +17,4 @@ showReadingTime: false
 
 A little about ongoing things and writings.
 
-{{< lead >}}
+{{< /lead >}}
