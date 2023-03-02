@@ -17,4 +17,4 @@ showReadingTime: false
 
 A collection of guides, which can be helpful in our courses.
 
-{{< lead >}}
+{{< /lead >}}
