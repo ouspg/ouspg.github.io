@@ -11,6 +11,7 @@ title: "All OUSPG courses"
 | Cyber Security Project | IC00AK16 | [Link](https://opas.peppi.oulu.fi/en/course/IC00AK16/35025) |
 | Embedded Software Project| 521275A | [Link](https://opas.peppi.oulu.fi/en/course/521275A/2573) |
 | Empirical Research in Computer Security | 521246S | [Link](https://opas.peppi.oulu.fi/en/course/521246S/19997) |
+| International Crisis Management (CriM) | 521252S | [Link](https://opas.peppi.oulu.fi/en/course/521252S/16801)
 | Introduction to Cyber Security Testing | IC00AI82 | [Link](https://opas.peppi.oulu.fi/en/course/IC00AI82/32356) |
 | Privacy and Social Engineering | IC00AI83 | [Link](https://opas.peppi.oulu.fi/en/course/IC00AI83/32378)
 | Software Engineering | 521457A | [Link](https://opas.peppi.oulu.fi/en/course/521457A/730)
