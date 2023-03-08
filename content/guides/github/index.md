@@ -19,8 +19,8 @@ coverCaption: "If that doesn't fix it, git.txt contains the phone number of a fr
 Some courses use GitHub Classroom as a place where assignments will be returned.
 In practice, students will have a single regular Git repository, which will be updated during the course.
 Often, there will be template files, which will be filled as instructed.
-The workflow to return assignments for these courses is following:
 
+## Workflow
 
   1. Enrol in the course
 
@@ -46,6 +46,8 @@ git push
 
 You can also use the graphical interface of GitHub, but this might not be as convenient as it seems.
 We recommend instead installing [Git](https://git-scm.com/) for your machine, and modifying Markdown files either by using [VSCode](https://code.visualstudio.com/) or the fully open-source version [VSCodium](https://vscodium.com/).
+
+## Authentication
 
 When using GitHub from the command line, some level of authentication is required.
 If you are using two-factor authentication (2FA, you should!), basic username and password authentication will not work.
