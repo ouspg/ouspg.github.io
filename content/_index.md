@@ -33,10 +33,8 @@ Learning
 
 ---
 
-<!-- --- -->
+## {{< icon "lightbulb" >}} The website is **currently under development** and there might be a lack of content {{< icon "lightbulb" >}}
 
-<!-- ## Work in Progress  -->
-
-<!-- The website is **currently under development** and there might be a lack of content. -->
+---
 
 
