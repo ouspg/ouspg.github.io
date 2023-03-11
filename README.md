@@ -61,3 +61,13 @@ gh repo list ouspg --json url,description,name,repositoryTopics,stargazerCount,o
 
 The repository meta information is currently updated automatically in deployment (see workflows) into the `data` folder, but not modified back to the repository.
 The file in the repository serves for development purposes and can be modified locally and updated if needed.
+
+## Benchmarking recommendations
+
+* [Mozilla Observatory](https://observatory.mozilla.org)
+* [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+
+## Future development ideas
+
+Use a subdomain for resources (guides, docs et al.) and move content into the other repository.
+Could be https://github.com/h-enk/doks
