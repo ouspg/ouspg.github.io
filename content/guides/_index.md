@@ -3,7 +3,7 @@ author: Oulu University Secure Programing Group
 title: "Guides and tutorials"
 # menu: "main"
 date: 2023-01-22
-lastmod: 2023-02-22
+lastmod : [':git', ':fileModTime']
 showDateUpdated: true
 showDate: false
 showAuthor: false
