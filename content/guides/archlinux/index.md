@@ -18,8 +18,8 @@ coverCaption: "Arch Linux is registered trademark of the Arch Linux project"
 
 # Arch Linux with Black Arch repositories
 
-Lightweight and customised Arch Linux-based virtual machine can be used in many courses.
-This Linux distribution might have a different package manager than many have used, but it has *an excellent wiki* for possible problem situations and is a good guide.
+Small and customised Arch Linux-based virtual machine can be used in many courses.
+This Linux distribution might have a different package manager than many have used, but it has *an excellent wiki* for possible problem situations and is good for learning.
 See [Arch Linux Wiki.](https://wiki.archlinux.org/)
 
 The virtual machine has only a minimal amount of tools pre-installed in case you don't have enough space on a hard drive.
