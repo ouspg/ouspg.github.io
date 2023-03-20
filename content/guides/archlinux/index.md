@@ -35,17 +35,14 @@ All of the repositories are pre-configured.
 
 ## Image information
 
-Image is distributed in [OVA](https://en.wikipedia.org/wiki/Open_Virtualization_Format) format for x86_64 architectures and uses Gnome Desktop Environment as default.
-
-For ARM-based M1/M2 Macbooks, it is distributed in `qcow2` format, which could be used with [UTM](https://mac.getutm.app/) or QEMU, for example.
-The ARM image uses Arch Linux ARM (unofficial) as a base, and package availability might differ for `x86_64` version.
-
+The image uses Gnome Desktop Environment as default and includes some core packages, e.g. browser, the code editor and some programming languages.
 
 * Username: **arch**
 * Password: **arch**
 
-### VirtualBox on x86_64 Linux, Intel Macbooks and Windows systems
+### x86_64 Linux, Intel Macbooks, and Windows systems
 
+Image is distributed in [OVA](https://en.wikipedia.org/wiki/Open_Virtualization_Format) format for x86_64 architectures.
 This image is intended for VirtualBox or VMware.
 
 VirtualBox guest additions are included.
@@ -58,6 +55,9 @@ At least 4GB ram and 2 cores are recommended.
 If you face a freezing screen on the start-up in VirtualBox, change the display driver to another one.
 
 ### M1/M2 Macbooks
+
+For ARM-based M1/M2 Macbooks, it is distributed in `qcow2` format.
+The ARM image uses Arch Linux ARM (unofficial) as a base, and package availability might differ for `x86_64` version.
 
 Use [UTM](https://mac.getutm.app/).
 
