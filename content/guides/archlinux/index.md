@@ -46,7 +46,7 @@ Image is distributed in [OVA](https://en.wikipedia.org/wiki/Open_Virtualization_
 This image is intended for VirtualBox or VMware.
 
 VirtualBox guest additions are included.
-For VMware, `open-vm-tools` are included.
+For VMware, you need to configure [open-vm-tools](https://wiki.archlinux.org/title/VMware/Install_Arch_Linux_as_a_guest#Open-VM-Tools) by yourself to allow a shared clipboard and other utilities. 
 
 OVA files can be directly imported into VirtualBox or VMware.
 You must configure basics, e.g. RAM and CPU core amount.
@@ -56,7 +56,7 @@ If you face a freezing screen on the start-up in VirtualBox, change the display 
 
 ### M1/M2 Macbooks
 
-For ARM-based M1/M2 Macbooks, it is distributed in `qcow2` format.
+For ARM-based M1/M2 Macbooks, the image is distributed in `qcow2` format.
 The ARM image uses Arch Linux ARM (unofficial) as a base, and package availability might differ for `x86_64` version.
 
 Use [UTM](https://mac.getutm.app/).
