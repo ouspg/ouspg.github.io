@@ -3,8 +3,7 @@ title: "Arch Linux virtual machine"
 headless: false
 author: Oulu University Secure Programing Group
 # layout: learning
-date: 2023-03-20
-lastmod : [':git', ':fileModTime']
+date: 2023-03-19
 showDateUpdated: true
 showDate: false
 showAuthor: false
@@ -20,7 +19,7 @@ coverCaption: "Arch Linux is registered trademark of the Arch Linux project"
 # Arch Linux with Black Arch repositories
 
 Lightweight and customised Arch Linux-based virtual machine can be used in many courses.
-This Linux distribution might have a different package manager than many have used, but it has *an excellent wiki* for possible problem situations.
+This Linux distribution might have a different package manager than many have used, but it has *an excellent wiki* for possible problem situations and is a good guide.
 See [Arch Linux Wiki.](https://wiki.archlinux.org/)
 
 The virtual machine has only a minimal amount of tools pre-installed in case you don't have enough space on a hard drive.
@@ -36,7 +35,7 @@ All of the repositories are pre-configured.
 
 ## Image information
 
-Image is distributed in OVA format for x86_64 architectures and uses Gnome Desktop Environment as default.
+Image is distributed in [OVA](https://en.wikipedia.org/wiki/Open_Virtualization_Format) format for x86_64 architectures and uses Gnome Desktop Environment as default.
 
 For ARM-based M1/M2 Macbooks, it is distributed in `qcow2` format, which could be used with [UTM](https://mac.getutm.app/) or QEMU, for example.
 The ARM image uses Arch Linux ARM (unofficial) as a base, and package availability might differ for `x86_64` version.
@@ -57,6 +56,16 @@ You must configure basics, e.g. RAM and CPU core amount.
 At least 4GB ram and 2 cores are recommended.
 
 If you face a freezing screen on the start-up in VirtualBox, change the display driver to another one.
+
+### M1/M2 Macbooks
+
+Use [UTM](https://mac.getutm.app/).
+
+Download the `qcow2` image and extract it.
+You need to create a dummy virtual machine at first (not emulation!), and then replace the empty virtual hard drive with the downloaded one.
+
+The image is _UEFI_ bootable.
+
 
 ## Black Arch repositories
 

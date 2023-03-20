@@ -42,6 +42,7 @@ enableCodeCopy = true
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
+  lastmod = [':git', ':fileModTime']
   editURL = "https://github.com/ouspg/ouspg.github.io/tree/main/content"
   editAppendPath = true
   showHeadingAnchors = true

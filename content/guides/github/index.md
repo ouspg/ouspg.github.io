@@ -4,7 +4,6 @@ headless: false
 author: Oulu University Secure Programing Group
 # layout: learning
 date: 2023-02-22
-lastmod : [':git', ':fileModTime']
 showDateUpdated: true
 showDate: false
 showAuthor: false
