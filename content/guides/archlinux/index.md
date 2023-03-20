@@ -78,49 +78,45 @@ See their [tools](https://blackarch.org/tools.html) section for available tools.
 
 ## Installing packages
 
-Update the package index
+**Update the package index**
 
 ```console
 sudo pacman -Sy
 ```
     
-Install package (You can look from here https://archlinux.org/packages/ for official packages and https://blackarch.org/tools.html for penetration testing tools.)
+**Install packag**e (You can look from here https://archlinux.org/packages/ for official packages and https://blackarch.org/tools.html for penetration testing tools.)
 
 ```console
 sudo pacman -S <package-name>
 ```
 
-Remove package 
+**Remove package**
 ```console
 sudo pacman -R <package-name>
 ```
 
-Remove package and its dependencies 
+**Remove package and its dependencies**
 ```console
 sudo pacman -Rcns <package-name>
 ```
 
-
-Upgrade all packages
+**Upgrade all packages**
 ```console
 sudo pacman -Syu
 ```
 
-Clean all the packages which have no dependencies (however, might remove something you need as well!)
+**Clean all the packages which have no dependencies** (however, might remove something you need as well!)
 
 ```console
 sudo pacman -Qdtq
 ```
 
-Clean package cache:
+**Clean package cache**
 ```console
-sudo pacman -Sc
+sudo pacman -Scc
 ```
 
-Clean allk
-
-
-## Installing AUR packages (from https://aur.archlinux.org/packages/)
+## Installing AUR packages
 
 Arch Linux has a large user-supplied package ecosystem, which is located in a different repository.
 See https://aur.archlinux.org/packages/.
@@ -128,18 +124,18 @@ Usually, you need some kind of helper for installing these packages.
 
 [`yay`](https://github.com/Jguer/yay) helper has been pre-installed for installing AUR packages.
 
-Install AUR package (Note, that `sudo` is not included in the initial command, when compared to `pacman`)
+**Install AUR package** (Note, that `sudo` is not included in the initial command, when compared to `pacman`)
 
 ```console
 yay -S <aur-package-name>
 ```
-Remove AUR package
+**Remove AUR package**
 
 ```console
 yay -R <aur-package-name>
 ```
 
-Upgrade all packages
+**Upgrade all packages**
 ```console
 yay
 ```
