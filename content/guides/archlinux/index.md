@@ -9,7 +9,6 @@ showDateUpdated: true
 showDate: false
 showAuthor: false
 showEdit: true
-editURL: https://github.com/ouspg/ouspg.github.io/tree/main/content
 editAppendPath: true
 showPagination: true 
 showTableOfContents: true
