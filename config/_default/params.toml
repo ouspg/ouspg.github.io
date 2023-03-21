@@ -8,12 +8,10 @@
 colorScheme = "ouspg"
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = false
-courses = ""
-news = ""
 
-mainSections = "news"
+mainSections = "resources"
 
-enableSearch = false
+enableSearch = true
 enableCodeCopy = true
 
 # mainSections = ["section1", "section2"]
@@ -23,7 +21,7 @@ enableCodeCopy = true
   layout = "basic" # valid options: basic, hamburger, hybrid, custom
   # logo = "images/cropped_logo.png"
   logo = "/images/draw/logo_multicolor_no_border.svg"
-  showTitle = true
+  showTitle = false
 
 [footer]
   showCopyright = true
@@ -37,7 +35,7 @@ enableCodeCopy = true
 
 [article]
   showDate = true
-  showDateUpdated = false
+  showDateUpdated = true
   showAuthor = true
   showBreadcrumbs = true
   showDraftLabel = true
