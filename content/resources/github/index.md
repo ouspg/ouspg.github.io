@@ -1,5 +1,5 @@
 ---
-title: "GitHub Classroom Instructions"
+title: "GitHub Classroom instructions"
 headless: false
 author: Oulu University Secure Programing Group
 # layout: learning

@@ -1,8 +1,8 @@
 ---
 author: Oulu University Secure Programing Group
-title: "Guides and tutorials"
+title: "Instructions, guides and tutorials"
 # menu: "main"
-date: 2023-01-22
+date: 2023-03-20
 lastmod : [':git', ':fileModTime']
 showDateUpdated: true
 showDate: false
@@ -15,6 +15,6 @@ showReadingTime: false
 
 {{< lead >}}
 
-A collection of guides, which can be helpful in our courses.
+A collection of resources, which can be helpful in some OUSPG-provided courses.
 
 {{< /lead >}}
