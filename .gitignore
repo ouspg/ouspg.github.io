@@ -9,6 +9,7 @@ node_modules/
 # Work in Progress files but not tracked
 
 wip
+.DS_store
 
 # Executable may be added to repository
 hugo.exe
