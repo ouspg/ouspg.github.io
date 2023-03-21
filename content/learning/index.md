@@ -18,5 +18,6 @@ showBreadcrumbs: false
 ---
 As digitalisation deepens and spreads to new areas of life, the need to ensure and safeguard its operations also increases.
 The University of Oulu strengthens the training of cyber security experts. 
-The training will focus on the technical competence needed to ensure cyber security.  
+The training will focus on the technical competence needed to ensure cyber security. 
+**OUSPG** also takes part for the new cyber security curriculum.
 We currently offer several public resources which are used as a part of our teaching. 
