@@ -20,7 +20,7 @@ Ongoing courses: Cryptographic systems and their weaknesses and Introduction to 
 
 {{< lead >}}
 The purpose of the Oulu University Secure Programming Group (OUSPG), active since 1996, is to study, evaluate and develop methods of implementing and testing application and system software in order to prevent, discover and eliminate implementation level security vulnerabilities in a proactive fashion. Our focus is on implementation level security issues and software security testing.
-OUSPG is active as an academic research group in the University of Oulu since summer 1996. 
+OUSPG is active as an academic research group in the University of Oulu since summer 1996.
 {{< /lead >}}
 
 
@@ -28,12 +28,12 @@ OUSPG is active as an academic research group in the University of Oulu since su
 Results and Publications
 {{< /button >}}
 {{< button href="learning" target="_self" >}}
-Learning 
+Learning
 {{< /button >}}
 
 ---
 
-## {{< icon "lightbulb" >}} The website is **currently under development** and there might be a lack of content {{< icon "lightbulb" >}}
+## The website is **currently under development** and there might be a lack of content.
 
 ---
 
