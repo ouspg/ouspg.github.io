@@ -71,3 +71,14 @@ The file in the repository serves for development purposes and can be modified l
 
 Use a subdomain for resources (guides, docs et al.) and move content into the other repository.
 Could be https://github.com/h-enk/doks
+
+
+
+###
+
+Dark theme tuning?
+
+Black: #101010
+Red-text: #b7384b
+Red: #b7384b
+Red-hover: #830c16
