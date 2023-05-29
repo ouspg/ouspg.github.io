@@ -13,6 +13,18 @@ The website for OUSPG
  1. Edit anything and enjoy automatic live updates and refresh by `hugo` and your browser
  1. Commit changes, push your branch and make a pull request against `main`
 
+ If you want to make the page accessible in the local network and disable some caching, run Hugo as
+ ```
+ hugo server -D --disableFastRender --bind 0.0.0.0
+ ```
+
+ ### CSS compiling
+
+ There is a helper script to build CSS from the Tailwind classes.
+ Run `npm run dev` to compile changes automatically.
+
+ You must install dependencies of the theme in `themes/congo` at first.
+
 ## Modifying top banner
 
 Modify the file `config/_default/languages.en.toml` to change the contents of the banner, or disable it.
@@ -82,3 +94,7 @@ Black: #101010
 Red-text: #b7384b
 Red: #b7384b
 Red-hover: #830c16
+
+Castle sizing
+
+width="530pt" height="640pt"
