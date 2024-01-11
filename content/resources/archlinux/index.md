@@ -61,8 +61,8 @@ The ARM image uses Arch Linux ARM (unofficial) as a base, and package availabili
 
 Use [UTM](https://mac.getutm.app/).
 
-Download the `qcow2` image and extract it.
-You need to create a dummy virtual machine at first (not emulation!), and then replace the empty virtual hard drive with the downloaded one.
+Download the `qcow2` image. It does not have marked file extension. 
+You need to create a dummy virtual machine at first (not emulation and not preconfigured!), and then replace the empty virtual hard drive with the downloaded one.
 
 The image is _UEFI_ bootable.
 
