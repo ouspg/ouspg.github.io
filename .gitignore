@@ -1,20 +1,24 @@
-# Dependency directories
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
 node_modules/
-.vscode/
 
-# Generated files by hugo
-**/public/
-**/resources/_gen/
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Work in Progress files but not tracked
 
-wip
-.DS_store
+# environment variables
+.env
+.env.production
 
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
+# macOS-specific files
+.DS_Store
 
-# Temporary lock file while building
-.hugo_build.lock
+# jetbrains setting folder
+.idea/
