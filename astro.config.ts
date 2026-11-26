@@ -6,5 +6,8 @@ export default defineConfig({
   integrations: [mdx({ processor: satteri() })],
   vite: {
     clearScreen: false,
+    server: {
+      allowedHosts: ['mac.tailf7cf2f.ts.net'],
+    },
   },
 });

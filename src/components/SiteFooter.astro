@@ -1,0 +1,22 @@
+---
+const profiles = [
+  { label: 'GitHub', url: 'https://github.com/ouspg' },
+  { label: 'LinkedIn', url: 'https://linkedin.com/in/ouspg' },
+  { label: 'Medium', url: 'https://medium.com/ouspg' },
+];
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div>
+      <p>© {new Date().getFullYear()} OUSPG <span>University of Oulu, Finland</span></p>
+      <p class="content-license">
+          Original website content is licensed under
+        <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"> CC BY-NC-ND 4.0</a>.
+      </p>
+    </div>
+    <ul class="profiles" aria-label="Group profiles">
+      {profiles.map(({ label, url }) => <li><a href={url}>{label}</a></li>)}
+    </ul>
+  </div>
+</footer>

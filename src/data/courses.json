@@ -1,0 +1,73 @@
+[
+  {
+    "level": "Bachelor’s level",
+    "courses": [
+      {
+        "title": "Embedded Software Project",
+        "href": "https://opas.peppi.oulu.fi/en/course/521275A/2573",
+        "note": "Discontinued"
+      },
+      {
+        "title": "Introduction to Cyber Security",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AU61/45690"
+      },
+      {
+        "title": "Introduction to Cyber Security Testing",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AI82/32356"
+      },
+      {
+        "title": "Privacy and Social Engineering",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AI83/32378"
+      },
+      {
+        "title": "Software Engineering",
+        "href": "https://opas.peppi.oulu.fi/en/course/521457A/730"
+      }
+    ]
+  },
+  {
+    "level": "Master’s level",
+    "courses": [
+      {
+        "title": "Cryptographic systems and their weaknesses",
+        "href": "https://opas.peppi.oulu.fi/en/course/521254S/16803"
+      },
+      {
+        "title": "Cyber Security I: Ethical Hacking",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ64/34556"
+      },
+      {
+        "title": "Cyber Security II: Cloud and Network Security",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ73/34705"
+      },
+      {
+        "title": "Cyber Security III: Software and Hardware Security",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ74/34706"
+      },
+      {
+        "title": "Cyber Security Project",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AK16/35025"
+      },
+      {
+        "title": "Empirical Research in Computer Security",
+        "href": "https://opas.peppi.oulu.fi/en/course/521246S/19997"
+      },
+      {
+        "title": "International Crisis Management (CriM)",
+        "href": "https://opas.peppi.oulu.fi/en/course/521252S/16801"
+      },
+      {
+        "title": "Modern Cryptography",
+        "href": "https://opas.peppi.oulu.fi/en/course/521244S/19996"
+      },
+      {
+        "title": "Security Engineering",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ63/34555"
+      },
+      {
+        "title": "Software Project",
+        "href": "https://opas.peppi.oulu.fi/en/course/521479S/732"
+      }
+    ]
+  }
+]

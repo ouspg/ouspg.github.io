@@ -1,0 +1,55 @@
+---
+import PageIntro from '../components/PageIntro.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import courseGroups from '../data/courses.json';
+import { curriculumPeriod } from '../lib/curriculum';
+
+import { getListings } from '../lib/listings/checked';
+import ThesisTable from '../components/ThesisTable.astro';
+
+const { theses } = await getListings();
+const currentPeriod = curriculumPeriod();
+---
+
+<SiteLayout title="Teaching · OUSPG" description="Explore cyber security studies at Oulu and browse courses by degree level.">
+  <PageIntro>
+    <strong slot="title">Teaching and thesis topics</strong>
+    Explore how to design secure software, test connected devices and evaluate the systems they belong to.
+  </PageIntro>
+
+  <div class="wrap teaching-layout">
+    <nav class="course-directory" aria-labelledby="courses-title">
+      <h2 id="courses-title">Course directory</h2>
+      <p>Course links open the Peppi study guide in a new tab.</p>
+      {courseGroups.map(({ level, courses }) => (
+        <details>
+          <summary>{level} ({courses.length})</summary>
+          <ul>
+            {courses.map(({ title, href, note }) => {
+              const url = new URL(href);
+              url.searchParams.set('period', currentPeriod);
+              return (
+                <li>
+                  <a href={url.href} target="_blank" rel="noopener">
+                    <span class="course-name">{title}{note && <small>{note}</small>}</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+      ))}
+    </nav>
+    <section class="study-overview" aria-labelledby="study-title">
+      <h2 id="study-title">Studying cyber security at Oulu</h2>
+      <p>At the University of Oulu, students can explore cyber security through electives or specialise in it during their master’s studies in computer science and engineering.</p>
+      <h3>From design to testing</h3>
+      <p>Security work starts with design choices. Students learn to build software and devices with security in mind, then use different tools and methods to assess how well those choices hold up in practice.</p>
+      <h3>Beyond a single device</h3>
+      <p>A device is also part of a larger system. Studying that system means examining its connections, how it is operated and how those processes affect its security.</p>
+      <p class="study-sources">University of Oulu articles · <a href="https://www.oulu.fi/en/news/university-oulu-strengthens-training-cyber-security-experts">Technical training</a> · <a href="https://www.oulu.fi/fi/uutiset/oulun-yliopistossa-voi-suuntautua-kyberturvallisuuteen">Study pathways (Finnish)</a></p>
+    </section>
+  </div>
+  <ThesisTable theses={theses.filter(work => work.supervisors?.length)} />
+</SiteLayout>

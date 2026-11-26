@@ -1,16 +1,14 @@
 ---
+import PageIntro from '../components/PageIntro.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<SiteLayout
+  title="OUSPG · Oulu University Secure Programming Group"
+  description="Oulu University Secure Programming Group researches software security and software testing at the University of Oulu in Finland."
+>
+  <PageIntro>
+    <Fragment slot="title">Research in <strong>software security</strong><br />at the University of Oulu</Fragment>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </PageIntro>
+</SiteLayout>

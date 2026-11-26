@@ -1,0 +1,59 @@
+---
+import { thesisDegrees, type Work } from '../lib/listings/model';
+interface Props {
+  theses: Work[];
+}
+const { theses } = Astro.props;
+const labels = { bachelor: 'Bachelor’s', master: 'Master’s', phd: 'PhD' };
+---
+
+<section class="wrap thesis-section" aria-labelledby="thesis-heading">
+  <h2 id="thesis-heading">Supervised theses</h2>
+  {theses.length ? (
+    <>
+      <label class="thesis-filter" hidden>
+        Degree
+        <select aria-controls="supervised-theses">
+          <option value="all">All degrees ({theses.length})</option>
+          {thesisDegrees.map(degree => {
+            const count = theses.filter(thesis => thesis.degree === degree).length;
+            return <option value={degree} disabled={!count}>{labels[degree]} ({count})</option>;
+          })}
+        </select>
+      </label>
+      <table id="supervised-theses" class="thesis-table" aria-labelledby="thesis-heading">
+        <thead>
+          <tr><th scope="col">Year</th><th scope="col">Thesis title</th><th scope="col">Author</th></tr>
+        </thead>
+        <tbody>
+          {theses.map(thesis => (
+            <tr data-degree={thesis.degree}>
+              <td>{thesis.issued?.slice(0, 4) ?? '—'}</td>
+              <th scope="row">
+                <a href={thesis.url} target="_blank" rel="noopener">{thesis.title}</a>
+                {thesis.degree && <small>{labels[thesis.degree]}</small>}
+              </th>
+              <td>{thesis.authors.join(' · ') || '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  ) : <p>No supervised theses listed yet.</p>}
+</section>
+
+<script>
+  const filter = document.querySelector<HTMLElement>('.thesis-filter');
+  const select = filter?.querySelector('select');
+  if (filter && select) {
+    const rows = document.querySelectorAll<HTMLTableRowElement>('#supervised-theses tbody tr');
+    function filterRows(degree: string) {
+      for (const row of rows) {
+        row.hidden = degree !== 'all' && row.dataset['degree'] !== degree;
+      }
+    }
+    select.addEventListener('change', () => filterRows(select.value));
+    filterRows(select.value);
+    filter.hidden = false;
+  }
+</script>
