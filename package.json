@@ -1,5 +1,5 @@
 {
-  "name": "starry-shepherd",
+  "name": "ouspg-site",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -9,9 +9,16 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "typecheck": "astro sync && tsc --noEmit",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.10",
+    "@astrojs/mdx": "^8.1.6",
     "astro": "^7.4.13"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite-plus": "^1.8.0"
   }
 }

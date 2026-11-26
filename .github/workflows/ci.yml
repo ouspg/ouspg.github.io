@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: voidzero-dev/setup-vp@v1.22.0
+        with:
+          node-version: '26'
+          cache: true
+          run-install: false
+      - run: vp install --frozen-lockfile
+      - run: vp test run --config vitest.config.ts
+      - run: vp run typecheck
+
+  # Set the Pages source to GitHub Actions before enabling this job.
+  # release:
+  #   needs: checks
+  #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  #   runs-on: ubuntu-latest
+  #   concurrency:
+  #     group: github-pages
+  #     cancel-in-progress: false
+  #   permissions:
+  #     contents: read
+  #     pages: write
+  #     id-token: write
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   steps:
+  #     - uses: actions/checkout@v7
+  #       with:
+  #         persist-credentials: false
+  #     - uses: voidzero-dev/setup-vp@v1.22.0
+  #       with:
+  #         node-version: '26'
+  #         run-install: false
+  #     - run: vp install --frozen-lockfile
+  #     - uses: actions/configure-pages@v6
+  #     - run: vp run build
+  #     - uses: actions/upload-pages-artifact@v5
+  #       with:
+  #         path: dist
+  #     - uses: actions/deploy-pages@v5
+  #       id: deployment

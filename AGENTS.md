@@ -1,3 +1,7 @@
+## User requests
+
+Treat questions as requests for an answer, requiring careful analysis of pros and cons. Make changes only when the user explicitly authorizes them. If permission is unclear, ask before editing.
+
 ## Development
 
 Use [Vite+](https://viteplus.dev/llms.txt) for local development.
@@ -7,6 +11,9 @@ Core commands from above shortly:
 - Start Astro in the background with `vp run dev --background`.
 - Manage the server with `vp run dev status`, `vp run dev logs`, and `vp run dev stop`.
 - Build with `vp run build` and preview with `vp run preview`.
+- Check TypeScript with `vp run typecheck`.
+
+Configure Vite in `astro.config.ts`. MDX uses Sätteri.
 
 ## Documentation
 
