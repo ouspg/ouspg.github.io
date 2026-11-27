@@ -5,23 +5,28 @@
       {
         "title": "Embedded Software Project",
         "href": "https://opas.peppi.oulu.fi/en/course/521275A/2573",
-        "note": "Discontinued"
+        "note": "Discontinued",
+        "credits": 8
       },
       {
         "title": "Introduction to Cyber Security",
-        "href": "https://opas.peppi.oulu.fi/en/course/IC00AU61/45690"
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AU61/45690",
+        "credits": 5
       },
       {
         "title": "Introduction to Cyber Security Testing",
-        "href": "https://opas.peppi.oulu.fi/en/course/IC00AI82/32356"
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AI82/32356",
+        "credits": 5
       },
       {
         "title": "Privacy and Social Engineering",
-        "href": "https://opas.peppi.oulu.fi/en/course/IC00AI83/32378"
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AI83/32378",
+        "credits": 5
       },
       {
         "title": "Software Engineering",
-        "href": "https://opas.peppi.oulu.fi/en/course/521457A/730"
+        "href": "https://opas.peppi.oulu.fi/en/course/521457A/730",
+        "credits": 5
       }
     ]
   },
@@ -29,44 +34,54 @@
     "level": "Master’s level",
     "courses": [
       {
-        "title": "Cryptographic systems and their weaknesses",
-        "href": "https://opas.peppi.oulu.fi/en/course/521254S/16803"
+        "title": "Cryptographic Systems and Their Weaknesses",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AK18/35044",
+        "credits": 5
       },
       {
         "title": "Cyber Security I: Ethical Hacking",
-        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ64/34556"
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ64/34556",
+        "credits": 5
       },
       {
         "title": "Cyber Security II: Cloud and Network Security",
-        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ73/34705"
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ73/34705",
+        "credits": 5
       },
       {
         "title": "Cyber Security III: Software and Hardware Security",
-        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ74/34706"
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ74/34706",
+        "credits": 5
       },
       {
         "title": "Cyber Security Project",
-        "href": "https://opas.peppi.oulu.fi/en/course/IC00AK16/35025"
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AK16/35025",
+        "credits": 5
       },
       {
-        "title": "Empirical Research in Computer Security",
-        "href": "https://opas.peppi.oulu.fi/en/course/521246S/19997"
+        "title": "Empirical Research in Cyber Security",
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ65/34563",
+        "credits": 5
       },
       {
         "title": "International Crisis Management (CriM)",
-        "href": "https://opas.peppi.oulu.fi/en/course/521252S/16801"
+        "href": "https://opas.peppi.oulu.fi/en/course/521252S/16801",
+        "credits": 5
       },
       {
         "title": "Modern Cryptography",
-        "href": "https://opas.peppi.oulu.fi/en/course/521244S/19996"
+        "href": "https://opas.peppi.oulu.fi/en/course/521244S/19996",
+        "credits": 5
       },
       {
         "title": "Security Engineering",
-        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ63/34555"
+        "href": "https://opas.peppi.oulu.fi/en/course/IC00AJ63/34555",
+        "credits": 5
       },
       {
         "title": "Software Project",
-        "href": "https://opas.peppi.oulu.fi/en/course/521479S/732"
+        "href": "https://opas.peppi.oulu.fi/en/course/521479S/732",
+        "credits": 7
       }
     ]
   }

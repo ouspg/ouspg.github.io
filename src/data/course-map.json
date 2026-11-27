@@ -1,0 +1,400 @@
+{
+  "period": "2025-2026",
+  "programmes": [
+    {
+      "degree": "BSc",
+      "id": "45637",
+      "pathId": "2200",
+      "planId": "4520"
+    },
+    {
+      "degree": "MSc",
+      "id": "45673",
+      "pathId": "2204",
+      "planId": "4515"
+    }
+  ],
+  "courses": [
+    {
+      "code": "521275A",
+      "title": "Embedded Software Project",
+      "label": "Embedded Software Project",
+      "credits": 8.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/521275A/2573?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [],
+      "preparation": "Peppi lists Software Engineering and a background in computer systems or embedded programming. Operating Systems is beneficial. The course is discontinued.",
+      "connections": [
+        {
+          "from": "521457A",
+          "kind": "listed"
+        }
+      ],
+      "status": "Discontinued"
+    },
+    {
+      "code": "IC00AU61",
+      "title": "Introduction to Cyber Security",
+      "label": "Intro to Cyber Security",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AU61/45690?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "BSc",
+          "year": 2,
+          "term": "Spring",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "The course record gives no prerequisite.",
+      "connections": [],
+      "status": ""
+    },
+    {
+      "code": "IC00AI82",
+      "title": "Introduction to Cyber Security Testing",
+      "label": "Cyber Security Testing",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AI82/32356?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "BSc",
+          "year": 2,
+          "term": "Spring",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "Programming and technical skills can help with higher grades. Students can pass without them.",
+      "connections": [],
+      "status": ""
+    },
+    {
+      "code": "IC00AI83",
+      "title": "Privacy and Social Engineering",
+      "label": "Privacy & Social Engineering",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AI83/32378?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "BSc",
+          "year": 2,
+          "term": "Spring",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "Programming and technical skills can help with the more advanced laboratory work.",
+      "connections": [],
+      "status": ""
+    },
+    {
+      "code": "521457A",
+      "title": "Software Engineering",
+      "label": "Software Engineering",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/521457A/730?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "BSc",
+          "year": 2,
+          "term": "Spring",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "The record names Elementary Programming and Computer Systems or Embedded Systems Programming.",
+      "connections": [],
+      "status": ""
+    },
+    {
+      "code": "521254S",
+      "title": "Cryptographic systems and their weaknesses",
+      "label": "Cryptographic Systems",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/521254S/16803?period=2023-2024",
+      "recordPeriod": "2023-2024",
+      "semesters": [],
+      "preparation": "The archived syllabus names Data Structures and Algorithms and Mathematical Structures for Computer Science.",
+      "connections": [],
+      "status": "Archived record"
+    },
+    {
+      "code": "IC00AJ64",
+      "title": "Cyber Security I: Ethical Hacking",
+      "label": "Ethical Hacking",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AJ64/34556?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 1,
+          "term": "Autumn",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "Peppi recommends familiarity with Linux and networking. Enrolment has no formal prerequisite.",
+      "connections": [],
+      "status": ""
+    },
+    {
+      "code": "IC00AJ73",
+      "title": "Cyber Security II: Cloud and Network Security",
+      "label": "Cloud & Network Security",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AJ73/34705?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 1,
+          "term": "Spring",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "Peppi recommends Ethical Hacking and Introduction to Cyber Security Testing as preparation.",
+      "connections": [
+        {
+          "from": "IC00AJ64",
+          "kind": "recommended"
+        },
+        {
+          "from": "IC00AI82",
+          "kind": "recommended"
+        }
+      ],
+      "status": ""
+    },
+    {
+      "code": "IC00AJ74",
+      "title": "Cyber Security III: Software and Hardware Security",
+      "label": "Software & Hardware Security",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AJ74/34706?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 2,
+          "term": "Autumn",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "The qualifications list names Introduction to Cyber Security Testing and Ethical Hacking.",
+      "connections": [
+        {
+          "from": "IC00AI82",
+          "kind": "listed"
+        },
+        {
+          "from": "IC00AJ64",
+          "kind": "listed"
+        }
+      ],
+      "status": ""
+    },
+    {
+      "code": "IC00AK16",
+      "title": "Cyber Security Project",
+      "label": "Cyber Security Project",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AK16/35025?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 2,
+          "term": "Autumn",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "The qualifications list names Security Engineering, Ethical Hacking, Cryptographic Systems and Their Weaknesses, Cloud and Network Security, and Software and Hardware Security.",
+      "connections": [
+        {
+          "from": "IC00AJ63",
+          "kind": "listed"
+        },
+        {
+          "from": "IC00AJ64",
+          "kind": "listed"
+        },
+        {
+          "from": "IC00AK18",
+          "kind": "listed"
+        },
+        {
+          "from": "IC00AJ74",
+          "kind": "listed"
+        },
+        {
+          "from": "IC00AJ73",
+          "kind": "listed"
+        }
+      ],
+      "status": ""
+    },
+    {
+      "code": "521246S",
+      "title": "Empirical Research in Computer Security",
+      "label": "Empirical Security Research",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/521246S/19997?period=2023-2024",
+      "recordPeriod": "2023-2024",
+      "semesters": [],
+      "preparation": "The archived syllabus names Computer Security (521155S) and mentions spring, period 3. The selected curriculum does not place this course code.",
+      "connections": [],
+      "status": "Archived record"
+    },
+    {
+      "code": "521252S",
+      "title": "International Crisis Management (CriM)",
+      "label": "Crisis Management",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/521252S/16801?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 1,
+          "term": "Autumn",
+          "credits": 2.5
+        },
+        {
+          "degree": "MSc",
+          "year": 2,
+          "term": "Autumn",
+          "credits": 2.5
+        }
+      ],
+      "preparation": "Some lectures and workshops require advance reading or short preparatory tasks.",
+      "connections": [],
+      "status": ""
+    },
+    {
+      "code": "521244S",
+      "title": "Modern Cryptography",
+      "label": "Modern Cryptography",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/521244S/19996?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 1,
+          "term": "Spring",
+          "credits": 2.5
+        },
+        {
+          "degree": "MSc",
+          "year": 2,
+          "term": "Spring",
+          "credits": 2.5
+        }
+      ],
+      "preparation": "Recommended preparation includes mathematical structures, probability and statistics, data structures and algorithms, and introductory cryptography.",
+      "connections": [],
+      "status": ""
+    },
+    {
+      "code": "IC00AJ63",
+      "title": "Security Engineering",
+      "label": "Security Engineering",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AJ63/34555?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 1,
+          "term": "Autumn",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "Peppi describes Cyber Security Testing, Privacy and Social Engineering, and Information Security (811168P) as required or recommended without distinguishing them.",
+      "connections": [
+        {
+          "from": "IC00AI82",
+          "kind": "mixed"
+        },
+        {
+          "from": "IC00AI83",
+          "kind": "mixed"
+        }
+      ],
+      "status": ""
+    },
+    {
+      "code": "521479S",
+      "title": "Software Project",
+      "label": "Software Project",
+      "credits": 7.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/521479S/732?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 1,
+          "term": "Autumn",
+          "credits": 7.0
+        }
+      ],
+      "preparation": "The qualifications list names Software Engineering, Operating Systems, Elementary Programming and systems or embedded programming. Projects can require additional reading.",
+      "connections": [
+        {
+          "from": "521457A",
+          "kind": "listed"
+        }
+      ],
+      "status": ""
+    },
+    {
+      "code": "IC00AK18",
+      "title": "Cryptographic Systems and Their Weaknesses",
+      "label": "Cryptographic Systems",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AK18/35044?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 1,
+          "term": "Spring",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "The qualifications list names Data Structures and Algorithms, Mathematical Structures for Computer Science, Security Engineering and Introduction to Cyber Security Testing.",
+      "connections": [
+        {
+          "from": "IC00AJ63",
+          "kind": "listed"
+        },
+        {
+          "from": "IC00AI82",
+          "kind": "listed"
+        }
+      ],
+      "status": ""
+    },
+    {
+      "code": "IC00AJ65",
+      "title": "Empirical Research in Cyber Security",
+      "label": "Empirical Security Research",
+      "credits": 5.0,
+      "source": "https://opas.peppi.oulu.fi/en/course/IC00AJ65/34563?period=2025-2026",
+      "recordPeriod": "2025-2026",
+      "semesters": [
+        {
+          "degree": "MSc",
+          "year": 1,
+          "term": "Spring",
+          "credits": 5.0
+        }
+      ],
+      "preparation": "The course record names Computer Security (521155S).",
+      "connections": [],
+      "status": ""
+    }
+  ]
+}

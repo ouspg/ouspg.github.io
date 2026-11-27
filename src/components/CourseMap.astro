@@ -1,0 +1,107 @@
+---
+import catalog from '../data/course-map.json';
+import '../styles/course-map.css';
+
+const { courses, programmes, period } = catalog;
+type Course = typeof courses[number];
+type Semester = Course['semesters'][number];
+const slotLabel = (s: Semester) => `${s.degree} ${s.year} · ${s.term}`;
+const slots = [...new Map(courses.flatMap(course => course.semesters.map(s => [slotLabel(s), s] as const))).values()]
+  .sort((a, b) => a.degree.localeCompare(b.degree) || a.year - b.year || a.term.localeCompare(b.term));
+const gap = 225, width = slots.length * gap + 12, cardWidth = 174, cardHeight = 73;
+const positions = slots.flatMap((slot, column) => courses.filter(c =>
+  c.semesters.some(s => slotLabel(s) === slotLabel(slot))).map((course, row) =>
+    ({ course, credits: course.semesters.find(s => slotLabel(s) === slotLabel(slot))!.credits, x: column * gap + 24, y: row * 93 + 67 })));
+const archiveY = Math.max(...positions.map(n => n.y)) + cardHeight + 55;
+positions.push(...courses.filter(c => !c.semesters.length).map((course, column) =>
+  ({ course, credits: course.credits, x: column * gap + 24, y: archiveY + 27 })));
+const height = archiveY + cardHeight + 78;
+const edges = courses.flatMap(target => target.connections.map(({ from, kind }) => {
+  const a = positions.find(p => p.course.code === from);
+  const b = positions.find(p => p.course.code === target.code);
+  if (!a || !b) throw new Error(`Missing map endpoint: ${from} → ${target.code}`);
+  const x1 = a.x + cardWidth, y1 = a.y + cardHeight / 2;
+  const x2 = b.x, y2 = b.y + cardHeight / 2;
+  // Route long connections between rows so the line never passes through a card.
+  const lane = a.y + cardHeight + 8;
+  const direct = b.x === a.x + gap;
+  const path = direct
+    ? `M${x1},${y1} C${x1+28},${y1} ${x2-28},${y2} ${x2},${y2}`
+    : `M${x1},${y1} H${x1+15} V${lane} H${x2-12} V${y2} H${x2}`;
+  return { from, to: target.code, kind, path };
+}));
+const initial = 'IC00AK16';
+---
+<section class="wrap map-section" aria-labelledby="course-map-heading" id="course-map">
+  <h2 id="course-map-heading">Course pathways</h2>
+  <p class="map-intro">Trace a course back to its prerequisites or forward to the courses it prepares you for. The columns follow Peppi’s {period.replace('-', '–')} Cyber Security study plans.</p>
+  <div class="course-atlas">
+    <div class="atlas-toolbar">
+      <small>Drag to pan · Select a course to trace its links</small>
+      <div class="atlas-controls" aria-label="Map zoom">
+        <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
+        <output data-scale aria-label="Map scale">100%</output>
+        <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+        <button type="button" data-zoom="fit">Fit</button>
+      </div>
+    </div>
+    <div class="atlas-viewport" tabindex="0" role="region" aria-label="Course connections. Scroll to pan or use the zoom controls.">
+      <div class="atlas-surface" style={`width:${width}px;height:${height}px`}>
+        <div class="atlas-plane" style={`width:${width}px;height:${height}px`}>
+          {slots.map((s, i) => (
+            <div class="atlas-column" style={`left:${i * gap}px;width:${gap}px;height:${archiveY-22}px`}>
+              <span>{s.degree} · Year {s.year}</span><strong>{s.term}</strong>
+            </div>
+          ))}
+          <div class="atlas-archive" style={`top:${archiveY-10}px`}>Outside the selected timetable</div>
+          <svg class="atlas-wires" viewBox={`0 0 ${width} ${height}`} aria-hidden="true">
+            <defs>
+              <marker id="course-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+                <polygon points="0,0 8,4 0,8" fill="var(--atlas-accent)" />
+              </marker>
+            </defs>
+            {edges.map(e => <path d={e.path} data-from={e.from} data-to={e.to} data-kind={e.kind} />)}
+          </svg>
+          {positions.map(({ course: c, credits, x, y }) => (
+            <button type="button" class="atlas-node" data-code={c.code} data-degree={c.semesters[0]?.degree ?? 'archive'}
+              aria-label={`${c.title}, ${c.code}`} aria-pressed={c.code === initial}
+              style={`left:${x}px;top:${y}px;width:${cardWidth}px;height:${cardHeight}px`}>
+              <small>{c.code}<span>{credits} cr</span></small><strong>{c.label}</strong>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+    <div class="atlas-key">
+      <span><i></i>Listed preparation</span><span><i class="dashed"></i>Recommended or qualified</span>
+      <details class="atlas-picker">
+        <summary id="atlas-picker-label">Explore a course</summary>
+        <select data-course-picker aria-labelledby="atlas-picker-label">
+          {courses.map(c => <option value={c.code} selected={c.code === initial}>{c.title} · {c.code}</option>)}
+        </select>
+      </details>
+    </div>
+  </div>
+  <div class="atlas-inspector" aria-live="polite">
+    {courses.map(c => (
+      <article data-detail={c.code} hidden={c.code !== initial}>
+        <div>
+          <small>{c.code} · {c.credits} ECTS {c.status && `· ${c.status}`}</small>
+          <h3>{c.title}</h3>
+          <a href={c.source} target="_blank" rel="noopener">Peppi course record ↗</a>
+        </div>
+        <div>
+          <h4>Planned timing</h4>
+          {c.semesters.length ? <ul>{c.semesters.map(s => <li>{slotLabel(s)} · {s.credits} ECTS</li>)}</ul>
+            : <p>No placement for this code in the selected plans.</p>}
+          <h4>Preparation</h4><p>{c.preparation}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+  <p class="map-sources">Semester allocations from Peppi · {programmes.map((p, i) =>
+    <>{i > 0 && ' · '}<a href={`https://opas.peppi.oulu.fi/fi/ohjelma/${p.id}?period=${period}`} target="_blank" rel="noopener">{p.degree} Cyber Security plan</a></>)}</p>
+</section>
+<script>
+  import '../lib/course-map';
+</script>

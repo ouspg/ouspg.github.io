@@ -1,14 +1,25 @@
 ---
-import PageIntro from '../components/PageIntro.astro';
+import GroupFigures from '../components/GroupFigures.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
+
+const foundingYear = 1996;
+const year = new Intl.DateTimeFormat('en', { year: 'numeric', timeZone: 'Europe/Helsinki' }).format(new Date());
 ---
 
 <SiteLayout
   title="OUSPG · Oulu University Secure Programming Group"
   description="Oulu University Secure Programming Group researches software security and software testing at the University of Oulu in Finland."
 >
-  <PageIntro>
-    <Fragment slot="title">Research in <strong>software security</strong><br />at the University of Oulu</Fragment>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </PageIntro>
+  <header class="wrap home-intro">
+    <h1 class="page-title">We break things<br /><strong>to make them better.</strong></h1>
+    <a class="research-counter" href="/about/">
+      <strong class="research-years">{Number(year) - foundingYear}</strong>
+      <span class="research-caption">years of academic research</span>
+      <span class="research-meta">
+        <span>Since {foundingYear}</span>
+        <span class="research-about">About OUSPG <span aria-hidden="true">→</span></span>
+      </span>
+    </a>
+  </header>
+  <GroupFigures />
 </SiteLayout>

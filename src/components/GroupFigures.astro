@@ -1,0 +1,75 @@
+---
+import courses from '../data/courses.json';
+import snapshot from '../data/course-capacity.json';
+import baseline from '../data/listings-baseline.json';
+import { capacitySummary } from '../lib/peppi/capacity';
+import '../styles/group-figures.css';
+
+const levels = courses.map(group => group.courses.filter(course => course.note !== 'Discontinued'));
+const active = levels.flat();
+const credits = active.reduce((sum, course) => sum + course.credits, 0);
+const courseIds = active.map(course => new URL(course.href).pathname.split('/').at(-1)!);
+const saved = capacitySummary(snapshot.rows.filter(row => courseIds.includes(row.courseId)));
+const measures = [
+  { value: active.length, label: 'Active courses', detail: `${levels[0]?.length} bachelor’s · ${levels[1]?.length} master’s`, href: '/studying/#courses-title' },
+  { value: credits, label: 'Available credits', detail: 'ECTS across active courses', href: '/studying/#courses-title' },
+  { value: baseline.supervisedTheses.length, label: 'Supervised theses', detail: 'Browse the OuluREPO records', href: '/studying/#thesis-heading' },
+];
+---
+<section class="wrap figures" aria-labelledby="figures-title">
+  <header class="figures-header">
+    <!-- <h2 id="figures-title">OUSPG in numbers</h2> -->
+    <!-- <a href="/about/">About the group <span aria-hidden="true">→</span></a> -->
+  </header>
+  <div class="figures-main">
+    {measures.map(m => (
+      <a class="figure" href={m.href}>
+        <strong class="figure-value">{m.value}</strong>
+        <span class="figure-label">{m.label} <span aria-hidden="true">↗</span></span>
+        <small>{m.detail}</small>
+      </a>
+    ))}
+  </div>
+  <div class="figures-secondary">
+    <div class="capacity" data-capacity-ids={courseIds.join(',')}>
+      <div class="capacity-heading"><strong data-seats>{saved.total ?? '—'}</strong><h3>Estimated students to be taught per year</h3></div>
+      <p>Assumes one full run per course each year. <span data-coverage>{saved.coverage}</span> of {active.length} courses reported a seat limit for their latest completed run. Students taking multiple courses can count more than once.</p>
+      <small data-capacity-date>Peppi · {snapshot.checkedAt.slice(0, 10)}</small>
+    </div>
+    <div class="roster-figure"><h3>Current members</h3><span aria-label="Count pending">—</span><small>Roster pending</small></div>
+    <div class="roster-figure"><h3>Alumni</h3><span aria-label="Count pending">—</span><small>Roster pending</small></div>
+  </div>
+</section>
+
+<script>
+  import { capacitySummary, fetchCapacity } from '../lib/peppi/capacity';
+  import { curriculumPeriod } from '../lib/curriculum';
+
+  const tracker = document.querySelector<HTMLElement>('[data-capacity-ids]');
+  if (tracker) {
+    const ids = tracker.dataset['capacityIds']!.split(',');
+    let checked = 0;
+    let pending = false;
+    async function refresh() {
+      const now = Date.now();
+      if (!tracker || pending || document.hidden || now - checked < 3600000) return;
+      pending = true;
+      checked = now;
+      try {
+        const rows = await Promise.all(ids.map(id => fetchCapacity(id, curriculumPeriod(new Date(now)), now)));
+        const { total, coverage } = capacitySummary(rows);
+        tracker.querySelector('[data-seats]')!.textContent = String(total ?? '—');
+        tracker.querySelector('[data-coverage]')!.textContent = String(coverage);
+        const time = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/Helsinki' });
+        tracker.querySelector('[data-capacity-date]')!.textContent = `Peppi · checked ${time.format(now)} (Helsinki)`;
+      } catch {
+        // Keep the last complete, dated estimate if any course request fails.
+      } finally {
+        pending = false;
+      }
+    }
+    void refresh();
+    document.addEventListener('visibilitychange', refresh);
+    window.setInterval(refresh, 3600000);
+  }
+</script>

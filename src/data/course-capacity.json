@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-11-26T14:50:59+00:00",
+  "rows": [
+    {
+      "courseId": "45690",
+      "run": "IC00AU61-3002",
+      "ended": 1777755600000,
+      "seats": null
+    },
+    {
+      "courseId": "32356",
+      "run": "IC00AI82-3004",
+      "ended": 1772920800000,
+      "seats": null
+    },
+    {
+      "courseId": "32378",
+      "run": "IC00AI83-3004",
+      "ended": 1777755600000,
+      "seats": 70
+    },
+    {
+      "courseId": "730",
+      "run": "521457A-3016",
+      "ended": 1785445200000,
+      "seats": null
+    },
+    {
+      "courseId": "35044",
+      "run": "IC00AK18-3003",
+      "ended": 1772920800000,
+      "seats": 40
+    },
+    {
+      "courseId": "34556",
+      "run": "IC00AJ64-3003",
+      "ended": 1767132000000,
+      "seats": 40
+    },
+    {
+      "courseId": "34705",
+      "run": "IC00AJ73-3003",
+      "ended": 1777755600000,
+      "seats": 70
+    },
+    {
+      "courseId": "34706",
+      "run": "IC00AJ74-3004",
+      "ended": 1792875600000,
+      "seats": null
+    },
+    {
+      "courseId": "35025",
+      "run": "IC00AK16-3003",
+      "ended": 1767132000000,
+      "seats": null
+    },
+    {
+      "courseId": "34563",
+      "run": "IC00AJ65-3003",
+      "ended": 1777755600000,
+      "seats": null
+    },
+    {
+      "courseId": "16801",
+      "run": "521252S-3005",
+      "ended": 1767132000000,
+      "seats": 100
+    },
+    {
+      "courseId": "19996",
+      "run": "521244S-3004",
+      "ended": 1777755600000,
+      "seats": 20
+    },
+    {
+      "courseId": "34555",
+      "run": "IC00AJ63-3004",
+      "ended": 1792875600000,
+      "seats": 80
+    },
+    {
+      "courseId": "732",
+      "run": "521479S-3006",
+      "ended": 1767132000000,
+      "seats": null
+    }
+  ]
+}

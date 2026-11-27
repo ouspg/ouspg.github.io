@@ -1,8 +1,9 @@
 ---
 import groupMark from '../assets/ouspg.svg?url';
 
-const navigation = ['About', 'Research', 'Studying', 'People', 'Join', 'Contact'].map(label => {
-  const href = label === 'Studying' ? '/studying/' : undefined;
+const routes: Record<string, string> = { Home: '/', Studying: '/studying/', About: '/about/' };
+const navigation = ['Home', 'Research', 'Studying', 'People', 'Join', 'Contact', 'About'].map(label => {
+  const href = routes[label];
   const current = href && Astro.url.pathname.replace(/\/?$/, '/') === href;
   return { label, href, current };
 });

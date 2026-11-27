@@ -5,6 +5,7 @@ import courseGroups from '../data/courses.json';
 import { curriculumPeriod } from '../lib/curriculum';
 
 import { getListings } from '../lib/listings/checked';
+import CourseMap from '../components/CourseMap.astro';
 import ThesisTable from '../components/ThesisTable.astro';
 
 const { theses } = await getListings();
@@ -12,10 +13,10 @@ const currentPeriod = curriculumPeriod();
 ---
 
 <SiteLayout title="Teaching · OUSPG" description="Explore cyber security studies at Oulu and browse courses by degree level.">
-  <PageIntro>
-    <strong slot="title">Teaching and thesis topics</strong>
-    Explore how to design secure software, test connected devices and evaluate the systems they belong to.
-  </PageIntro>
+  <!-- <PageIntro> -->
+    <!-- <strong slot="title">Teaching and thesis topics</strong> -->
+    <!-- Explore how to design secure software, test connected devices and evaluate the systems they belong to. -->
+  <!-- </PageIntro> -->
 
   <div class="wrap teaching-layout">
     <nav class="course-directory" aria-labelledby="courses-title">
@@ -51,5 +52,6 @@ const currentPeriod = curriculumPeriod();
       <p class="study-sources">University of Oulu articles · <a href="https://www.oulu.fi/en/news/university-oulu-strengthens-training-cyber-security-experts">Technical training</a> · <a href="https://www.oulu.fi/fi/uutiset/oulun-yliopistossa-voi-suuntautua-kyberturvallisuuteen">Study pathways (Finnish)</a></p>
     </section>
   </div>
+  <CourseMap />
   <ThesisTable theses={theses.filter(work => work.supervisors?.length)} />
 </SiteLayout>

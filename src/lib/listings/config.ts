@@ -1,9 +1,9 @@
 // Use the name as recorded in OuluREPO. Each list matches any of its names.
 export const people = {
   authors: ['Halunen, Kimmo' ],
-  instructors: ['Halunen, Kimmo'],
-  firstReviewers: ['Halunen, Kimmo'],
-  secondReviewers: ['Halunen, Kimmo'],
+  instructors: ['Halunen, Kimmo', "Tokola, Teemu"],
+  firstReviewers: ['Halunen, Kimmo', "Tokola, Teemu"],
+  secondReviewers: ['Halunen, Kimmo', "Tokola, Teemu"],
   // authors: ['Halunen, Kimmo', 'Röning, Juha'],
   // instructors: ['Halunen, Kimmo', 'Röning, Juha'],
   // firstReviewers: ['Halunen, Kimmo', 'Röning, Juha'],

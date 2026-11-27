@@ -112,6 +112,64 @@ a:focus-visible {
   margin: 2rem 0 0;
   color: #50433d;
 }
+.page-lead p {
+  margin: 0;
+}
+.page-lead p + p {
+  margin-top: 1em;
+}
+.home-intro {
+  --headline-size: clamp(1.375rem, 2.7vw, 2.5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: clamp(1.25rem, 2vw, 2rem);
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+}
+.home-intro .page-title {
+  font-size: var(--headline-size);
+}
+.research-counter {
+  display: grid;
+  justify-self: end;
+  justify-items: end;
+  gap: .65rem;
+  text-align: end;
+  text-decoration: none;
+}
+.research-years {
+  color: var(--accent);
+  /* One numeral line equals the title's two 1.1em lines. */
+  font: 550 calc(2.5 * var(--headline-size))/.88 "Sora Variable", sans-serif;
+  letter-spacing: -.075em;
+  padding-inline-end: .05em;
+}
+.research-caption {
+  font: 450 clamp(1.125rem, 1.7vw, 1.5rem)/1.25 "Sora Variable", sans-serif;
+  letter-spacing: -.025em;
+}
+.research-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .25rem 1rem;
+  align-items: baseline;
+  color: #554c47;
+  font-size: clamp(1rem, 1.25vw, 1.1875rem);
+}
+.research-about {
+  color: var(--accent);
+  font-size: .9375rem;
+}
+.research-counter:is(:hover, :focus-visible) .research-about {
+  text-decoration: underline;
+}
+@media (max-width: 640px) {
+  .home-intro {
+    grid-template-columns: 1fr;
+    margin-top: 1.25rem;
+  }
+}
 .site-footer {
   color: #554c47;
   font-size: 0.8125rem;
